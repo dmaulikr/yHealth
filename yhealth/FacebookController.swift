@@ -12,7 +12,6 @@ import FacebookShare
 import FBSDKCoreKit
 
 class FacebookController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,7 +21,18 @@ class FacebookController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if (segue.identifier == "accountReview"){
+//        
+//            var svc = segue!.destinationViewController as AccountReview
+//            
+//            
+//            svc.toPass = ["blah", "bleeh", "boop"]
+//        }
+//    }
+//
     @IBAction func facebookLogin(_ sender: AnyObject) {
         let loginManager = LoginManager()
         loginManager.logIn([ .publicProfile, .email ], viewController: self) { loginResult in
@@ -43,16 +53,21 @@ class FacebookController: UIViewController {
                         }
                         else {
                             let data: [String:AnyObject] = result as! [String : AnyObject]
-                            print(data)
                             
-                            // pass the data through a segue to the screen
+                            
+
+                            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                            let viewC = storyboard.instantiateViewController(withIdentifier: "accountReview") as! AccountReview
+                            
+                            
+                            viewC.FBPassedProf = data
+                            
+                            
+                            self.present(viewC, animated: true, completion: nil)
                         }
                         
                     })
 
-                    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-                    let viewC = storyboard.instantiateViewController(withIdentifier: "insure")
-                    self.present(viewC, animated: true, completion: nil)
                 case .cancelled:
                     print("User cancelled login.")
             }
