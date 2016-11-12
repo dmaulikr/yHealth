@@ -1,0 +1,6 @@
+framework module Pods_yhealthUITests {
+  umbrella header "Pods-yhealthUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

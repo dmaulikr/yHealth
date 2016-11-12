@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A086FCCC0D84AE509E28DF6 /* Pods_yhealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DD628242AD7D6FE4A39FE5 /* Pods_yhealthUITests.framework */; };
+		23FF939F30BFB2284E4BBC5F /* Pods_yhealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA977F4037D825FAB9930B /* Pods_yhealth.framework */; };
+		4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552931DD6D625007D7236 /* AppDelegate.swift */; };
+		4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552951DD6D625007D7236 /* FacebookController.swift */; };
+		4C9552991DD6D625007D7236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9552971DD6D625007D7236 /* Main.storyboard */; };
+		4C95529B1DD6D625007D7236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C95529A1DD6D625007D7236 /* Assets.xcassets */; };
+		4C95529E1DD6D625007D7236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C95529C1DD6D625007D7236 /* LaunchScreen.storyboard */; };
+		4C9552A91DD6D625007D7236 /* yhealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552A81DD6D625007D7236 /* yhealthTests.swift */; };
+		4C9552B41DD6D626007D7236 /* yhealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552B31DD6D626007D7236 /* yhealthUITests.swift */; };
+		4C9552C41DD6FAFB007D7236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552C31DD6FAFB007D7236 /* ViewController.swift */; };
+		4CA8D52F1DD707640085AA51 /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5241DD707640085AA51 /* ARCoordinate.m */; };
+		4CA8D5301DD707640085AA51 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5261DD707640085AA51 /* ARGeoCoordinate.m */; };
+		4CA8D5311DD707640085AA51 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5281DD707640085AA51 /* ARKit.m */; };
+		4CA8D5321DD707640085AA51 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D52C1DD707640085AA51 /* AugmentedRealityController.m */; };
+		4CA8D5331DD707640085AA51 /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D52E1DD707640085AA51 /* GEOLocations.m */; };
+		57DD1516BE1D9F2E3B71F3A5 /* Pods_yhealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F170F0F195DC296C1DB962F /* Pods_yhealthTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C9552A51DD6D625007D7236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C9552881DD6D625007D7236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C95528F1DD6D625007D7236;
+			remoteInfo = yhealth;
+		};
+		4C9552B01DD6D626007D7236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C9552881DD6D625007D7236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C95528F1DD6D625007D7236;
+			remoteInfo = yhealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13AA977F4037D825FAB9930B /* Pods_yhealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3970E75E539E0AE5A2B002B1 /* Pods-yhealthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthUITests/Pods-yhealthUITests.release.xcconfig"; sourceTree = "<group>"; };
+		47B2E0BB65DC88426FD5CFAA /* Pods-yhealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealth/Pods-yhealth.release.xcconfig"; sourceTree = "<group>"; };
+		4C9552901DD6D625007D7236 /* yhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9552931DD6D625007D7236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C9552951DD6D625007D7236 /* FacebookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookController.swift; sourceTree = "<group>"; };
+		4C9552981DD6D625007D7236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C95529A1DD6D625007D7236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C95529D1DD6D625007D7236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C95529F1DD6D625007D7236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C9552A41DD6D625007D7236 /* yhealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yhealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9552A81DD6D625007D7236 /* yhealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yhealthTests.swift; sourceTree = "<group>"; };
+		4C9552AA1DD6D625007D7236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C9552AF1DD6D626007D7236 /* yhealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yhealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9552B31DD6D626007D7236 /* yhealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yhealthUITests.swift; sourceTree = "<group>"; };
+		4C9552B51DD6D626007D7236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C9552C31DD6FAFB007D7236 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CA8D5231DD707640085AA51 /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		4CA8D5241DD707640085AA51 /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		4CA8D5251DD707640085AA51 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		4CA8D5261DD707640085AA51 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		4CA8D5271DD707640085AA51 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		4CA8D5281DD707640085AA51 /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKit.m; sourceTree = "<group>"; };
+		4CA8D5291DD707640085AA51 /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
+		4CA8D52A1DD707640085AA51 /* ARViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewProtocol.h; sourceTree = "<group>"; };
+		4CA8D52B1DD707640085AA51 /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityController.h; sourceTree = "<group>"; };
+		4CA8D52C1DD707640085AA51 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
+		4CA8D52D1DD707640085AA51 /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
+		4CA8D52E1DD707640085AA51 /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocations.m; sourceTree = "<group>"; };
+		9F170F0F195DC296C1DB962F /* Pods_yhealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A181AE54259618C52C737EFA /* Pods-yhealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthTests/Pods-yhealthTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6DD628242AD7D6FE4A39FE5 /* Pods_yhealthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FD5D7E0B05B6897D47E9AE /* Pods-yhealthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthUITests/Pods-yhealthUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C867F1C566B90533AEAF2BFF /* Pods-yhealthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthTests/Pods-yhealthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3D4346A3A8692C4ACBD3042 /* Pods-yhealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yhealth/Pods-yhealth.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C95528D1DD6D625007D7236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FF939F30BFB2284E4BBC5F /* Pods_yhealth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9552A11DD6D625007D7236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DD1516BE1D9F2E3B71F3A5 /* Pods_yhealthTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9552AC1DD6D626007D7236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A086FCCC0D84AE509E28DF6 /* Pods_yhealthUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C9552871DD6D625007D7236 = {
+			isa = PBXGroup;
+			children = (
+				4CA8D5221DD707640085AA51 /* AR */,
+				4C9552921DD6D625007D7236 /* yhealth */,
+				4C9552A71DD6D625007D7236 /* yhealthTests */,
+				4C9552B21DD6D626007D7236 /* yhealthUITests */,
+				4C9552911DD6D625007D7236 /* Products */,
+				D4B66DEBF134C243EA8D4095 /* Pods */,
+				F0013036FE9657DA5C5356BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C9552911DD6D625007D7236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C9552901DD6D625007D7236 /* yhealth.app */,
+				4C9552A41DD6D625007D7236 /* yhealthTests.xctest */,
+				4C9552AF1DD6D626007D7236 /* yhealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C9552921DD6D625007D7236 /* yhealth */ = {
+			isa = PBXGroup;
+			children = (
+				4C9552C21DD6DE1A007D7236 /* Classes */,
+				4C9552C11DD6DE13007D7236 /* Resources */,
+				4C95529F1DD6D625007D7236 /* Info.plist */,
+			);
+			path = yhealth;
+			sourceTree = "<group>";
+		};
+		4C9552A71DD6D625007D7236 /* yhealthTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C9552A81DD6D625007D7236 /* yhealthTests.swift */,
+				4C9552AA1DD6D625007D7236 /* Info.plist */,
+			);
+			path = yhealthTests;
+			sourceTree = "<group>";
+		};
+		4C9552B21DD6D626007D7236 /* yhealthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C9552B31DD6D626007D7236 /* yhealthUITests.swift */,
+				4C9552B51DD6D626007D7236 /* Info.plist */,
+			);
+			path = yhealthUITests;
+			sourceTree = "<group>";
+		};
+		4C9552C11DD6DE13007D7236 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C95529C1DD6D625007D7236 /* LaunchScreen.storyboard */,
+				4C95529A1DD6D625007D7236 /* Assets.xcassets */,
+				4C9552971DD6D625007D7236 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4C9552C21DD6DE1A007D7236 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CA8D5411DD70A340085AA51 /* AR Classes */,
+				4C9552931DD6D625007D7236 /* AppDelegate.swift */,
+				4C9552951DD6D625007D7236 /* FacebookController.swift */,
+				4C9552C31DD6FAFB007D7236 /* ViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4CA8D5221DD707640085AA51 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				4CA8D5231DD707640085AA51 /* ARCoordinate.h */,
+				4CA8D5241DD707640085AA51 /* ARCoordinate.m */,
+				4CA8D5251DD707640085AA51 /* ARGeoCoordinate.h */,
+				4CA8D5261DD707640085AA51 /* ARGeoCoordinate.m */,
+				4CA8D5271DD707640085AA51 /* ARKit.h */,
+				4CA8D5281DD707640085AA51 /* ARKit.m */,
+				4CA8D5291DD707640085AA51 /* ARLocationDelegate.h */,
+				4CA8D52A1DD707640085AA51 /* ARViewProtocol.h */,
+				4CA8D52B1DD707640085AA51 /* AugmentedRealityController.h */,
+				4CA8D52C1DD707640085AA51 /* AugmentedRealityController.m */,
+				4CA8D52D1DD707640085AA51 /* GEOLocations.h */,
+				4CA8D52E1DD707640085AA51 /* GEOLocations.m */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		4CA8D5411DD70A340085AA51 /* AR Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "AR Classes";
+			sourceTree = "<group>";
+		};
+		D4B66DEBF134C243EA8D4095 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3D4346A3A8692C4ACBD3042 /* Pods-yhealth.debug.xcconfig */,
+				47B2E0BB65DC88426FD5CFAA /* Pods-yhealth.release.xcconfig */,
+				C867F1C566B90533AEAF2BFF /* Pods-yhealthTests.debug.xcconfig */,
+				A181AE54259618C52C737EFA /* Pods-yhealthTests.release.xcconfig */,
+				C6FD5D7E0B05B6897D47E9AE /* Pods-yhealthUITests.debug.xcconfig */,
+				3970E75E539E0AE5A2B002B1 /* Pods-yhealthUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0013036FE9657DA5C5356BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13AA977F4037D825FAB9930B /* Pods_yhealth.framework */,
+				9F170F0F195DC296C1DB962F /* Pods_yhealthTests.framework */,
+				A6DD628242AD7D6FE4A39FE5 /* Pods_yhealthUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C95528F1DD6D625007D7236 /* yhealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9552B81DD6D626007D7236 /* Build configuration list for PBXNativeTarget "yhealth" */;
+			buildPhases = (
+				5F3E7A47A6D17E89D25C58B5 /* [CP] Check Pods Manifest.lock */,
+				4C95528C1DD6D625007D7236 /* Sources */,
+				4C95528D1DD6D625007D7236 /* Frameworks */,
+				4C95528E1DD6D625007D7236 /* Resources */,
+				A329D98E6BD6033DA947577F /* [CP] Embed Pods Frameworks */,
+				595BD16C72BD71EFA9BA631E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yhealth;
+			productName = yhealth;
+			productReference = 4C9552901DD6D625007D7236 /* yhealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C9552A31DD6D625007D7236 /* yhealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9552BB1DD6D626007D7236 /* Build configuration list for PBXNativeTarget "yhealthTests" */;
+			buildPhases = (
+				C220F9081D3D078DC65A5735 /* [CP] Check Pods Manifest.lock */,
+				4C9552A01DD6D625007D7236 /* Sources */,
+				4C9552A11DD6D625007D7236 /* Frameworks */,
+				4C9552A21DD6D625007D7236 /* Resources */,
+				05991A804137DC92CB7791C1 /* [CP] Embed Pods Frameworks */,
+				99B6EFC6583DD1AED935B3A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C9552A61DD6D625007D7236 /* PBXTargetDependency */,
+			);
+			name = yhealthTests;
+			productName = yhealthTests;
+			productReference = 4C9552A41DD6D625007D7236 /* yhealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C9552AE1DD6D626007D7236 /* yhealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C9552BE1DD6D626007D7236 /* Build configuration list for PBXNativeTarget "yhealthUITests" */;
+			buildPhases = (
+				CDA784C6DDD92AC628CEE856 /* [CP] Check Pods Manifest.lock */,
+				4C9552AB1DD6D626007D7236 /* Sources */,
+				4C9552AC1DD6D626007D7236 /* Frameworks */,
+				4C9552AD1DD6D626007D7236 /* Resources */,
+				BF54F9D593269FB067D3BECA /* [CP] Embed Pods Frameworks */,
+				FFDED1A87F8C7C6710543C01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C9552B11DD6D626007D7236 /* PBXTargetDependency */,
+			);
+			name = yhealthUITests;
+			productName = yhealthUITests;
+			productReference = 4C9552AF1DD6D626007D7236 /* yhealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C9552881DD6D625007D7236 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Jessica Joseph";
+				TargetAttributes = {
+					4C95528F1DD6D625007D7236 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = G87HUM96UL;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					4C9552A31DD6D625007D7236 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = G87HUM96UL;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C95528F1DD6D625007D7236;
+					};
+					4C9552AE1DD6D626007D7236 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = G87HUM96UL;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C95528F1DD6D625007D7236;
+					};
+				};
+			};
+			buildConfigurationList = 4C95528B1DD6D625007D7236 /* Build configuration list for PBXProject "yhealth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C9552871DD6D625007D7236;
+			productRefGroup = 4C9552911DD6D625007D7236 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C95528F1DD6D625007D7236 /* yhealth */,
+				4C9552A31DD6D625007D7236 /* yhealthTests */,
+				4C9552AE1DD6D626007D7236 /* yhealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C95528E1DD6D625007D7236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C95529E1DD6D625007D7236 /* LaunchScreen.storyboard in Resources */,
+				4C95529B1DD6D625007D7236 /* Assets.xcassets in Resources */,
+				4C9552991DD6D625007D7236 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9552A21DD6D625007D7236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9552AD1DD6D626007D7236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05991A804137DC92CB7791C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yhealthTests/Pods-yhealthTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		595BD16C72BD71EFA9BA631E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yhealth/Pods-yhealth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F3E7A47A6D17E89D25C58B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99B6EFC6583DD1AED935B3A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yhealthTests/Pods-yhealthTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A329D98E6BD6033DA947577F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yhealth/Pods-yhealth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF54F9D593269FB067D3BECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yhealthUITests/Pods-yhealthUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C220F9081D3D078DC65A5735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA784C6DDD92AC628CEE856 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDED1A87F8C7C6710543C01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yhealthUITests/Pods-yhealthUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C95528C1DD6D625007D7236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA8D5331DD707640085AA51 /* GEOLocations.m in Sources */,
+				4CA8D52F1DD707640085AA51 /* ARCoordinate.m in Sources */,
+				4C9552C41DD6FAFB007D7236 /* ViewController.swift in Sources */,
+				4CA8D5321DD707640085AA51 /* AugmentedRealityController.m in Sources */,
+				4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */,
+				4CA8D5311DD707640085AA51 /* ARKit.m in Sources */,
+				4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */,
+				4CA8D5301DD707640085AA51 /* ARGeoCoordinate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9552A01DD6D625007D7236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9552A91DD6D625007D7236 /* yhealthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C9552AB1DD6D626007D7236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9552B41DD6D626007D7236 /* yhealthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C9552A61DD6D625007D7236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C95528F1DD6D625007D7236 /* yhealth */;
+			targetProxy = 4C9552A51DD6D625007D7236 /* PBXContainerItemProxy */;
+		};
+		4C9552B11DD6D626007D7236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C95528F1DD6D625007D7236 /* yhealth */;
+			targetProxy = 4C9552B01DD6D626007D7236 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C9552971DD6D625007D7236 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C9552981DD6D625007D7236 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C95529C1DD6D625007D7236 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C95529D1DD6D625007D7236 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C9552B61DD6D626007D7236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C9552B71DD6D626007D7236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C9552B91DD6D626007D7236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D4346A3A8692C4ACBD3042 /* Pods-yhealth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G87HUM96UL;
+				INFOPLIST_FILE = yhealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4C9552BA1DD6D626007D7236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B2E0BB65DC88426FD5CFAA /* Pods-yhealth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G87HUM96UL;
+				INFOPLIST_FILE = yhealth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C9552BC1DD6D626007D7236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C867F1C566B90533AEAF2BFF /* Pods-yhealthTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G87HUM96UL;
+				INFOPLIST_FILE = yhealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yhealth.app/yhealth";
+			};
+			name = Debug;
+		};
+		4C9552BD1DD6D626007D7236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A181AE54259618C52C737EFA /* Pods-yhealthTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G87HUM96UL;
+				INFOPLIST_FILE = yhealthTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yhealth.app/yhealth";
+			};
+			name = Release;
+		};
+		4C9552BF1DD6D626007D7236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FD5D7E0B05B6897D47E9AE /* Pods-yhealthUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G87HUM96UL;
+				INFOPLIST_FILE = yhealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = yhealth;
+			};
+			name = Debug;
+		};
+		4C9552C01DD6D626007D7236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3970E75E539E0AE5A2B002B1 /* Pods-yhealthUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G87HUM96UL;
+				INFOPLIST_FILE = yhealthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = yhealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C95528B1DD6D625007D7236 /* Build configuration list for PBXProject "yhealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9552B61DD6D626007D7236 /* Debug */,
+				4C9552B71DD6D626007D7236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9552B81DD6D626007D7236 /* Build configuration list for PBXNativeTarget "yhealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9552B91DD6D626007D7236 /* Debug */,
+				4C9552BA1DD6D626007D7236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9552BB1DD6D626007D7236 /* Build configuration list for PBXNativeTarget "yhealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9552BC1DD6D626007D7236 /* Debug */,
+				4C9552BD1DD6D626007D7236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C9552BE1DD6D626007D7236 /* Build configuration list for PBXNativeTarget "yhealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C9552BF1DD6D626007D7236 /* Debug */,
+				4C9552C01DD6D626007D7236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C9552881DD6D625007D7236 /* Project object */;
+}
