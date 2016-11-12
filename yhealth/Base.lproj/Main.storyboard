@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Ea-Ll-JxN">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Ms-d6-gzG">
@@ -78,7 +78,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2dq-18-cQt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HpU-wh-jdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-XE-7Rs">
@@ -99,6 +99,9 @@
                                 <state key="normal" title="DENTAL" backgroundImage="red-circle">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5Ea-Ll-JxN" kind="show" id="Ov3-ml-mDi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.8666666666666667" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EkT-ft-8G8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kfl-rI-527">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yhealth-name-logo" translatesAutoresizingMaskIntoConstraints="NO" id="5tA-D2-mY4">
@@ -153,7 +156,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FRe-cO-0Mh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pgS-yX-NdD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4rA-fs-Ikh">
@@ -174,6 +177,9 @@
                                 <state key="normal" title="HEALTH" backgroundImage="red-circle">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5Ea-Ll-JxN" kind="show" id="ADy-gS-8MB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -186,26 +192,75 @@
         <!--AR view-->
         <scene sceneID="s3Z-H6-dla">
             <objects>
-                <viewController id="5Ea-Ll-JxN" userLabel="AR view" customClass="CameraViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Camera" id="5Ea-Ll-JxN" userLabel="AR view" customClass="CameraViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ik-T0-9PU"/>
                         <viewControllerLayoutGuide type="bottom" id="rMK-d3-TbF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ObK-52-IYh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xf2-AP-06h">
+                                <rect key="frame" x="347" y="640" width="47" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="internet"/>
+                                <connections>
+                                    <segue destination="eOI-PG-fon" kind="show" id="wHb-VG-iti"/>
+                                </connections>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFg-r1-bYl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="508"/>
+            <point key="canvasLocation" x="1739.1304347826087" y="507.06521739130437"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="OfZ-ve-yyt">
+            <objects>
+                <viewController id="eOI-PG-fon" customClass="MapViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ocx-ia-cYy"/>
+                        <viewControllerLayoutGuide type="bottom" id="uzJ-bS-rra"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZwW-lh-qaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PhH-N9-a1N">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-zp-nyB">
+                                <rect key="frame" x="274" y="604" width="64" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="photo-cam"/>
+                                <connections>
+                                    <action selector="cameraAction" destination="eOI-PG-fon" eventType="touchUpInside" id="5S0-7A-7qZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="_mapView" destination="PhH-N9-a1N" id="yQL-N1-xAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUF-hs-cdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391.304347826087" y="507.06521739130437"/>
         </scene>
     </scenes>
     <resources>
         <image name="green-circle" width="2000" height="2000"/>
+        <image name="internet" width="512" height="512"/>
         <image name="logo" width="2000" height="2000"/>
+        <image name="photo-cam" width="512" height="512"/>
         <image name="red-circle" width="2000" height="2000"/>
         <image name="yhealth-name-logo" width="2000" height="2000"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ADy-gS-8MB"/>
+    </inferredMetricsTieBreakers>
 </document>
