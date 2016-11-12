@@ -22,6 +22,12 @@
 		4CA8D5311DD707640085AA51 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5281DD707640085AA51 /* ARKit.m */; };
 		4CA8D5321DD707640085AA51 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D52C1DD707640085AA51 /* AugmentedRealityController.m */; };
 		4CA8D5331DD707640085AA51 /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D52E1DD707640085AA51 /* GEOLocations.m */; };
+		4CA8D5461DD70AAF0085AA51 /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5421DD70AAF0085AA51 /* Extends.swift */; };
+		4CA8D5471DD70AAF0085AA51 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5431DD70AAF0085AA51 /* Place.swift */; };
+		4CA8D5491DD70AAF0085AA51 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5451DD70AAF0085AA51 /* PlaceAnnotation.swift */; };
+		4CA8D54D1DD70B590085AA51 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D54B1DD70B590085AA51 /* CameraViewController.swift */; };
+		4CA8D54E1DD70B590085AA51 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D54C1DD70B590085AA51 /* MapViewController.swift */; };
+		4CA8D5511DD7119F0085AA51 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8D5501DD7119F0085AA51 /* MarkerView.swift */; };
 		57DD1516BE1D9F2E3B71F3A5 /* Pods_yhealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F170F0F195DC296C1DB962F /* Pods_yhealthTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +78,13 @@
 		4CA8D52C1DD707640085AA51 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
 		4CA8D52D1DD707640085AA51 /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
 		4CA8D52E1DD707640085AA51 /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocations.m; sourceTree = "<group>"; };
+		4CA8D5421DD70AAF0085AA51 /* Extends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
+		4CA8D5431DD70AAF0085AA51 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4CA8D5451DD70AAF0085AA51 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		4CA8D54A1DD70ACD0085AA51 /* AR-BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AR-BridgeHeader.h"; sourceTree = "<group>"; };
+		4CA8D54B1DD70B590085AA51 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4CA8D54C1DD70B590085AA51 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4CA8D5501DD7119F0085AA51 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		9F170F0F195DC296C1DB962F /* Pods_yhealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A181AE54259618C52C737EFA /* Pods-yhealthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthTests/Pods-yhealthTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6DD628242AD7D6FE4A39FE5 /* Pods_yhealthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +185,9 @@
 		4C9552C21DD6DE1A007D7236 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CA8D54F1DD710E20085AA51 /* Models */,
+				4CA8D54B1DD70B590085AA51 /* CameraViewController.swift */,
+				4CA8D54C1DD70B590085AA51 /* MapViewController.swift */,
 				4CA8D5411DD70A340085AA51 /* AR Classes */,
 				4C9552931DD6D625007D7236 /* AppDelegate.swift */,
 				4C9552951DD6D625007D7236 /* FacebookController.swift */,
@@ -202,8 +218,20 @@
 		4CA8D5411DD70A340085AA51 /* AR Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CA8D5431DD70AAF0085AA51 /* Place.swift */,
+				4CA8D54A1DD70ACD0085AA51 /* AR-BridgeHeader.h */,
 			);
 			name = "AR Classes";
+			sourceTree = "<group>";
+		};
+		4CA8D54F1DD710E20085AA51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CA8D5501DD7119F0085AA51 /* MarkerView.swift */,
+				4CA8D5451DD70AAF0085AA51 /* PlaceAnnotation.swift */,
+				4CA8D5421DD70AAF0085AA51 /* Extends.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		D4B66DEBF134C243EA8D4095 /* Pods */ = {
@@ -520,10 +548,16 @@
 				4CA8D52F1DD707640085AA51 /* ARCoordinate.m in Sources */,
 				4C9552C41DD6FAFB007D7236 /* ViewController.swift in Sources */,
 				4CA8D5321DD707640085AA51 /* AugmentedRealityController.m in Sources */,
+				4CA8D54D1DD70B590085AA51 /* CameraViewController.swift in Sources */,
+				4CA8D5491DD70AAF0085AA51 /* PlaceAnnotation.swift in Sources */,
 				4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */,
 				4CA8D5311DD707640085AA51 /* ARKit.m in Sources */,
+				4CA8D5511DD7119F0085AA51 /* MarkerView.swift in Sources */,
 				4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */,
+				4CA8D5461DD70AAF0085AA51 /* Extends.swift in Sources */,
 				4CA8D5301DD707640085AA51 /* ARGeoCoordinate.m in Sources */,
+				4CA8D5471DD70AAF0085AA51 /* Place.swift in Sources */,
+				4CA8D54E1DD70B590085AA51 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +713,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yhealth/AR-BridgeHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -693,6 +728,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.yhealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "yhealth/AR-BridgeHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
