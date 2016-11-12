@@ -2353,20 +2353,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					31418D425B97E292FFAFC566D79FC144 = {
-						LastSwiftMigration = 0810;
-					};
-					5A0A28913A1212C2D1EACECBA1E58AC0 = {
-						LastSwiftMigration = 0810;
-					};
-					A8F77DC39F7D0CFE46DAA5C135D96A80 = {
-						LastSwiftMigration = 0810;
-					};
-					F7BF3C9ED4EC64207E230E2816CBD738 = {
-						LastSwiftMigration = 0810;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2998,7 +2984,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3581,7 +3566,6 @@
 				PRODUCT_NAME = Pods_yhealth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

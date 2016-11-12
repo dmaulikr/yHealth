@@ -8,6 +8,8 @@
 
 import UIKit
 import FacebookLogin
+import FacebookShare
+import FBSDKCoreKit
 
 class FacebookController: UIViewController {
 
@@ -28,10 +30,26 @@ class FacebookController: UIViewController {
                 case .failed(let error):
                     print(error)
                 case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-                    print("Logged in!")
-                    print(grantedPermissions)
-                    print(declinedPermissions)
-                    print(accessToken)
+
+                    let params = ["fields":"first_name,last_name,age_range,gender,locale,email"]
+                    
+                    let request:FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "/\(accessToken.userId!)", parameters: params, httpMethod: "GET")
+
+                    request.start(completionHandler: {(connection, result, error) -> Void in
+                    
+                    
+                        if ((error) != nil){
+                            print("Error: \(error)")
+                        }
+                        else {
+                            let data: [String:AnyObject] = result as! [String : AnyObject]
+                            print(data)
+                            
+                            // pass the data through a segue to the screen
+                        }
+                        
+                    })
+
                     let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
                     let viewC = storyboard.instantiateViewController(withIdentifier: "insure")
                     self.present(viewC, animated: true, completion: nil)

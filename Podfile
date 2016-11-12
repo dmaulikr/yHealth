@@ -9,6 +9,8 @@ target 'yhealth' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
 
+  pod 'FBSDKCoreKit'
+
   target 'yhealthTests' do
     inherit! :search_paths
     # Pods for testing

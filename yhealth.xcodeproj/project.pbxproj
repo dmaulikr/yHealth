@@ -185,10 +185,8 @@
 		4C9552C21DD6DE1A007D7236 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4CA8D54F1DD710E20085AA51 /* Models */,
-				4CA8D54B1DD70B590085AA51 /* CameraViewController.swift */,
-				4CA8D54C1DD70B590085AA51 /* MapViewController.swift */,
 				4CA8D5411DD70A340085AA51 /* AR Classes */,
+				4CA8D54F1DD710E20085AA51 /* Models */,
 				4C9552931DD6D625007D7236 /* AppDelegate.swift */,
 				4C9552951DD6D625007D7236 /* FacebookController.swift */,
 				4C9552C31DD6FAFB007D7236 /* ViewController.swift */,
@@ -218,6 +216,8 @@
 		4CA8D5411DD70A340085AA51 /* AR Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CA8D54C1DD70B590085AA51 /* MapViewController.swift */,
+				4CA8D54B1DD70B590085AA51 /* CameraViewController.swift */,
 				4CA8D5431DD70AAF0085AA51 /* Place.swift */,
 				4CA8D54A1DD70ACD0085AA51 /* AR-BridgeHeader.h */,
 			);
