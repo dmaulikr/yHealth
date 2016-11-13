@@ -12,6 +12,25 @@
 		4C3BCEC71DD84E14009A75CA /* ChartsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BCEC61DD84E14009A75CA /* ChartsController.swift */; };
 		4C440C331DD76F230097CD38 /* AccountReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C440C321DD76F230097CD38 /* AccountReview.swift */; };
 		4C9205FF1DD85E5C00CD094E /* AdminP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9205FE1DD85E5C00CD094E /* AdminP.swift */; };
+		4C9206081DD881D300CD094E /* СhartObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206031DD881D300CD094E /* СhartObject.swift */; };
+		4C9206091DD881D300CD094E /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206041DD881D300CD094E /* UIColor+Extention.swift */; };
+		4C92060B1DD881D300CD094E /* SlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206071DD881D300CD094E /* SlideController.swift */; };
+		4C92060D1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92060C1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift */; };
+		4C9206111DD8821500CD094E /* UILabel+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92060E1DD8821500CD094E /* UILabel+Animation.swift */; };
+		4C9206121DD8821500CD094E /* UIView+YALAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92060F1DD8821500CD094E /* UIView+YALAppearance.swift */; };
+		4C9206131DD8821500CD094E /* UIView+YALFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206101DD8821500CD094E /* UIView+YALFrames.swift */; };
+		4C9206151DD8823300CD094E /* Tween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206141DD8823300CD094E /* Tween.swift */; };
+		4C9206181DD8823F00CD094E /* UIPageViewController+YALPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206161DD8823F00CD094E /* UIPageViewController+YALPageController.swift */; };
+		4C9206191DD8823F00CD094E /* YALPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206171DD8823F00CD094E /* YALPageController.swift */; };
+		4C92061E1DD8828E00CD094E /* EatFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C92061A1DD8828E00CD094E /* EatFitViewController.xib */; };
+		4C92061F1DD8828E00CD094E /* EatFitSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92061B1DD8828E00CD094E /* EatFitSlideViewController.swift */; };
+		4C9206201DD8828E00CD094E /* EatFitSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C92061C1DD8828E00CD094E /* EatFitSlideViewController.xib */; };
+		4C9206211DD8828E00CD094E /* EatFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92061D1DD8828E00CD094E /* EatFitViewController.swift */; };
+		4C9206261DD882D900CD094E /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206221DD882D900CD094E /* DropView.swift */; };
+		4C9206271DD882D900CD094E /* EatFitPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206231DD882D900CD094E /* EatFitPageControl.swift */; };
+		4C9206281DD882D900CD094E /* RoundChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206241DD882D900CD094E /* RoundChartView.swift */; };
+		4C9206291DD882D900CD094E /* SlideLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9206251DD882D900CD094E /* SlideLabel.swift */; };
+		4C92062B1DD8847200CD094E /* Objects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C92062A1DD8847200CD094E /* Objects.plist */; };
 		4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552931DD6D625007D7236 /* AppDelegate.swift */; };
 		4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552951DD6D625007D7236 /* FacebookController.swift */; };
 		4C9552991DD6D625007D7236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9552971DD6D625007D7236 /* Main.storyboard */; };
@@ -58,6 +77,25 @@
 		4C3BCEC61DD84E14009A75CA /* ChartsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsController.swift; sourceTree = "<group>"; };
 		4C440C321DD76F230097CD38 /* AccountReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountReview.swift; sourceTree = "<group>"; };
 		4C9205FE1DD85E5C00CD094E /* AdminP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminP.swift; sourceTree = "<group>"; };
+		4C9206031DD881D300CD094E /* СhartObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "СhartObject.swift"; sourceTree = "<group>"; };
+		4C9206041DD881D300CD094E /* UIColor+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		4C9206071DD881D300CD094E /* SlideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideController.swift; sourceTree = "<group>"; };
+		4C92060C1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimationGroup+Sequence.swift"; sourceTree = "<group>"; };
+		4C92060E1DD8821500CD094E /* UILabel+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Animation.swift"; sourceTree = "<group>"; };
+		4C92060F1DD8821500CD094E /* UIView+YALAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+YALAppearance.swift"; sourceTree = "<group>"; };
+		4C9206101DD8821500CD094E /* UIView+YALFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+YALFrames.swift"; sourceTree = "<group>"; };
+		4C9206141DD8823300CD094E /* Tween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tween.swift; sourceTree = "<group>"; };
+		4C9206161DD8823F00CD094E /* UIPageViewController+YALPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+YALPageController.swift"; sourceTree = "<group>"; };
+		4C9206171DD8823F00CD094E /* YALPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YALPageController.swift; sourceTree = "<group>"; };
+		4C92061A1DD8828E00CD094E /* EatFitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EatFitViewController.xib; sourceTree = "<group>"; };
+		4C92061B1DD8828E00CD094E /* EatFitSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatFitSlideViewController.swift; sourceTree = "<group>"; };
+		4C92061C1DD8828E00CD094E /* EatFitSlideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EatFitSlideViewController.xib; sourceTree = "<group>"; };
+		4C92061D1DD8828E00CD094E /* EatFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatFitViewController.swift; sourceTree = "<group>"; };
+		4C9206221DD882D900CD094E /* DropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		4C9206231DD882D900CD094E /* EatFitPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatFitPageControl.swift; sourceTree = "<group>"; };
+		4C9206241DD882D900CD094E /* RoundChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundChartView.swift; sourceTree = "<group>"; };
+		4C9206251DD882D900CD094E /* SlideLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideLabel.swift; sourceTree = "<group>"; };
+		4C92062A1DD8847200CD094E /* Objects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Objects.plist; sourceTree = "<group>"; };
 		4C9552901DD6D625007D7236 /* yhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9552931DD6D625007D7236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C9552951DD6D625007D7236 /* FacebookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookController.swift; sourceTree = "<group>"; };
@@ -127,6 +165,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9206001DD8813700CD094E /* circle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = circle;
+			sourceTree = "<group>";
+		};
+		4C9206011DD881B400CD094E /* slide */ = {
+			isa = PBXGroup;
+			children = (
+				4C9206021DD881D300CD094E /* Model */,
+				4C9206041DD881D300CD094E /* UIColor+Extention.swift */,
+				4C9206061DD881D300CD094E /* ViewController */,
+			);
+			name = slide;
+			sourceTree = "<group>";
+		};
+		4C9206021DD881D300CD094E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C9206031DD881D300CD094E /* СhartObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C9206061DD881D300CD094E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C9206221DD882D900CD094E /* DropView.swift */,
+				4C9206231DD882D900CD094E /* EatFitPageControl.swift */,
+				4C9206241DD882D900CD094E /* RoundChartView.swift */,
+				4C9206251DD882D900CD094E /* SlideLabel.swift */,
+				4C92061A1DD8828E00CD094E /* EatFitViewController.xib */,
+				4C92061B1DD8828E00CD094E /* EatFitSlideViewController.swift */,
+				4C92061C1DD8828E00CD094E /* EatFitSlideViewController.xib */,
+				4C92061D1DD8828E00CD094E /* EatFitViewController.swift */,
+				4C9206071DD881D300CD094E /* SlideController.swift */,
+				4C92060C1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift */,
+				4C92060E1DD8821500CD094E /* UILabel+Animation.swift */,
+				4C92060F1DD8821500CD094E /* UIView+YALAppearance.swift */,
+				4C9206101DD8821500CD094E /* UIView+YALFrames.swift */,
+				4C9206141DD8823300CD094E /* Tween.swift */,
+				4C9206161DD8823F00CD094E /* UIPageViewController+YALPageController.swift */,
+				4C9206171DD8823F00CD094E /* YALPageController.swift */,
+				4C92062A1DD8847200CD094E /* Objects.plist */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		4C9552871DD6D625007D7236 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +240,7 @@
 		4C9552921DD6D625007D7236 /* yhealth */ = {
 			isa = PBXGroup;
 			children = (
+				4C9206011DD881B400CD094E /* slide */,
 				4C9552C21DD6DE1A007D7236 /* Classes */,
 				4C9552C11DD6DE13007D7236 /* Resources */,
 				4C95529F1DD6D625007D7236 /* Info.plist */,
@@ -181,6 +269,7 @@
 		4C9552C11DD6DE13007D7236 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C9206001DD8813700CD094E /* circle */,
 				4C95529C1DD6D625007D7236 /* LaunchScreen.storyboard */,
 				4C95529A1DD6D625007D7236 /* Assets.xcassets */,
 				4C9552971DD6D625007D7236 /* Main.storyboard */,
@@ -389,7 +478,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C95529E1DD6D625007D7236 /* LaunchScreen.storyboard in Resources */,
+				4C92062B1DD8847200CD094E /* Objects.plist in Resources */,
+				4C92061E1DD8828E00CD094E /* EatFitViewController.xib in Resources */,
 				4C95529B1DD6D625007D7236 /* Assets.xcassets in Resources */,
+				4C9206201DD8828E00CD094E /* EatFitSlideViewController.xib in Resources */,
 				4C9552991DD6D625007D7236 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,21 +647,37 @@
 			files = (
 				4CA8D5331DD707640085AA51 /* GEOLocations.m in Sources */,
 				4CA8D52F1DD707640085AA51 /* ARCoordinate.m in Sources */,
+				4C9206111DD8821500CD094E /* UILabel+Animation.swift in Sources */,
 				4C9552C41DD6FAFB007D7236 /* ViewController.swift in Sources */,
 				4CA8D5321DD707640085AA51 /* AugmentedRealityController.m in Sources */,
+				4C9206181DD8823F00CD094E /* UIPageViewController+YALPageController.swift in Sources */,
 				4CA8D54D1DD70B590085AA51 /* CameraViewController.swift in Sources */,
+				4C92060D1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift in Sources */,
+				4C92061F1DD8828E00CD094E /* EatFitSlideViewController.swift in Sources */,
+				4C9206121DD8821500CD094E /* UIView+YALAppearance.swift in Sources */,
+				4C9206091DD881D300CD094E /* UIColor+Extention.swift in Sources */,
 				4C440C331DD76F230097CD38 /* AccountReview.swift in Sources */,
 				4CA8D5491DD70AAF0085AA51 /* PlaceAnnotation.swift in Sources */,
+				4C9206271DD882D900CD094E /* EatFitPageControl.swift in Sources */,
+				4C9206131DD8821500CD094E /* UIView+YALFrames.swift in Sources */,
 				4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */,
 				4CA8D5311DD707640085AA51 /* ARKit.m in Sources */,
 				4CA8D5511DD7119F0085AA51 /* MarkerView.swift in Sources */,
 				4C3BCEC71DD84E14009A75CA /* ChartsController.swift in Sources */,
+				4C9206191DD8823F00CD094E /* YALPageController.swift in Sources */,
+				4C9206211DD8828E00CD094E /* EatFitViewController.swift in Sources */,
 				4C9205FF1DD85E5C00CD094E /* AdminP.swift in Sources */,
 				4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */,
 				4CA8D5461DD70AAF0085AA51 /* Extends.swift in Sources */,
+				4C9206261DD882D900CD094E /* DropView.swift in Sources */,
 				4CA8D5301DD707640085AA51 /* ARGeoCoordinate.m in Sources */,
+				4C9206081DD881D300CD094E /* СhartObject.swift in Sources */,
+				4C9206291DD882D900CD094E /* SlideLabel.swift in Sources */,
+				4C9206281DD882D900CD094E /* RoundChartView.swift in Sources */,
+				4C92060B1DD881D300CD094E /* SlideController.swift in Sources */,
 				4CA8D5471DD70AAF0085AA51 /* Place.swift in Sources */,
 				4CA8D54E1DD70B590085AA51 /* MapViewController.swift in Sources */,
+				4C9206151DD8823300CD094E /* Tween.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

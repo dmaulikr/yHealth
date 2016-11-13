@@ -24,12 +24,5 @@ class AdminLogin: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func confirm(_ sender: Any) {
-        if adminLabel.text == "iamCAPtain." {
-            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-            let viewC = storyboard.instantiateViewController(withIdentifier: "adminAnal")
-            
-            self.present(viewC, animated: true, completion: nil)
-        }
-    }
+
 }

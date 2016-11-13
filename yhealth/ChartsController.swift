@@ -14,66 +14,8 @@ class ChartsController: UIViewController {
     
     @IBOutlet weak var nasdaqView: UIView!
     @IBOutlet weak var vitechView: UIView!
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view, typically from a nib.
-//        
-////        let chartConfig = ChartConfigXY(
-////            xAxisConfig: ChartAxisConfig(from: 2, to: 14, by: 2),
-////            yAxisConfig: ChartAxisConfig(from: 0, to: 14, by: 2)
-////        )
-////        
-////        let chart = LineChart(
-////            frame: CGRect(x: 0,y: 70,width: 300,height: 500),
-////            chartConfig: chartConfig,
-////            xTitle: "X axis",
-////            yTitle: "Y axis",
-////            lines: [
-////                (chartPoints: [(2.0, 10.6), (4.2, 5.1), (7.3, 3.0), (8.1, 5.5), (14.0, 8.0)], color: UIColor.red),
-////          (chartPoints: [(2.0, 2.6), (4.2, 4.1), (7.3, 1.0), (8.1, 11.5), (14.0, 3.0)], color: UIColor.blue)
-////            ]
-////        )
-////        
-////        self.view.addSubview(chart.view)
-//        
-//        
-//        
-//        let chartConfig = BarsChartConfig(
-//            valsAxisConfig: ChartAxisConfig(from: 0, to: 8, by: 2)
-//        )
-//        
-//        let chart = BarsChart(
-//            frame: CGRect(x: 0,y:  70,width: 300,height: 500),
-//            chartConfig: chartConfig,
-//            xTitle: "X axis",
-//            yTitle: "Y axis",
-//            bars: [
-//                ("A", 2),
-//                ("B", 4.5),
-//                ("C", 3),
-//                ("D", 5.4),
-//                ("E", 6.8),
-//                ("F", 0.5)
-//            ],
-//            color: UIColor.red,
-//            barWidth: 20
-//        )
-//        
-//        
-//        self.vitechView.addSubview(chart.view)
-//
-//        
-//        
-//        
-//        
-//        
-//    }
-//    
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+
+    
     
     fileprivate var chart: Chart?
     
@@ -115,7 +57,7 @@ class ChartsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let frame = self.chartFrame(self.view.bounds)
+        let frame = self.chartFrame(self.nasdaqView.bounds)
         let chartFrame = CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: frame.size.height - colorBarHeight)
         let colorBar = ColorBar(frame: CGRect(x: 0, y: chartFrame.origin.y + chartFrame.size.height, width: self.view.frame.size.width, height: self.colorBarHeight), c1: UIColor.red, c2: UIColor.green)
         self.view.addSubview(colorBar)
@@ -132,22 +74,6 @@ class ChartsController: UIViewController {
             (2.1, 5, 250, toColor(0)),
             (4, 4, 200, toColor(0.2)),
             (2.3, 5, 150, toColor(0.7)),
-            (6, 7, 120, toColor(0.9)),
-            (8, 3, 50, toColor(1)),
-            (2, 4.5, 80, toColor(0.7)),
-            (2, 5.2, 50, toColor(0.4)),
-            (2, 4, 100, toColor(0.3)),
-            (2.7, 5.5, 200, toColor(0.5)),
-            (1.7, 2.8, 150, toColor(0.7)),
-            (4.4, 8, 120, toColor(0.9)),
-            (5, 6.3, 250, toColor(1)),
-            (6, 8, 100, toColor(0)),
-            (4, 8.5, 200, toColor(0.5)),
-            (8, 5, 200, toColor(0.6)),
-            (8.5, 10, 150, toColor(0.7)),
-            (9, 11, 120, toColor(0.6)),
-            (10, 6, 100, toColor(1)),
-            (11, 7, 100, toColor(0)),
             (11, 4, 200, toColor(0.5)),
             (11.5, 10, 150, toColor(0.7)),
             (12, 7, 120, toColor(0.9)),
@@ -159,8 +85,8 @@ class ChartsController: UIViewController {
         let xValues = stride(from: (-2), through: 14, by: 2).map {ChartAxisValueInt($0, labelSettings: labelSettings)}
         let yValues = stride(from: (-2), through: 12, by: 2).map {ChartAxisValueInt($0, labelSettings: labelSettings)}
         
-        let xModel = ChartAxisModel(axisValues: xValues, axisTitleLabel: ChartAxisLabel(text: "Axis title", settings: labelSettings))
-        let yModel = ChartAxisModel(axisValues: yValues, axisTitleLabel: ChartAxisLabel(text: "Axis title", settings: labelSettings.defaultVertical()))
+        let xModel = ChartAxisModel(axisValues: xValues, axisTitleLabel: ChartAxisLabel(text: "Insurance Companies", settings: labelSettings))
+        let yModel = ChartAxisModel(axisValues: yValues, axisTitleLabel: ChartAxisLabel(text: "Claims", settings: labelSettings.defaultVertical()))
         
         let coordsSpace = ChartCoordsSpaceLeftBottomSingleAxis(chartSettings: self.iPhoneChartSettings, chartFrame: chartFrame, xModel: xModel, yModel: yModel)
         let (xAxis, yAxis, innerFrame) = (coordsSpace.xAxis, coordsSpace.yAxis, coordsSpace.chartInnerFrame)
@@ -186,6 +112,31 @@ class ChartsController: UIViewController {
         
         self.nasdaqView.addSubview(chart.view)
         self.chart = chart
+    
+    // VITECH BAR CHART
+    
+        let chartConfig = BarsChartConfig(
+            valsAxisConfig: ChartAxisConfig(from: 0, to: 8, by: 2)
+        )
+        let barFrame = self.chartFrame(self.nasdaqView.bounds)
+
+        let barChart = BarsChart(
+            frame: CGRect(x: barFrame.origin.x, y: barFrame.origin.y, width: barFrame.size.width, height: barFrame.size.height - colorBarHeight),
+            chartConfig: chartConfig,
+            xTitle: "Insurance Companies",
+            yTitle: "Y axis",
+            bars: [
+                ("ACME", 2),
+                ("CIGNA", 3),
+                ("UNITED", 0.5)
+            ],
+            color: UIColor.red,
+            barWidth: 20
+        )
+        
+        
+        self.vitechView.addSubview(barChart.view)
+
     }
     
     // We can use a view based layer for easy animation (or interactivity), in which case we use the default chart points layer with a generator to create bubble views.
@@ -272,28 +223,10 @@ class ChartsController: UIViewController {
             
             super.init(frame: frame)
             
-            self.layer.insertSublayer(gradient, at: 0)
-            
             let numberFormatter = NumberFormatter()
             numberFormatter.maximumFractionDigits = 2
             
-            for x in stride(from: segmentSize, through: gradient.frame.size.width - 1, by: segmentSize) {
-                
-                let dividerW: CGFloat = 1
-                let divider = UIView(frame: CGRect(x: x - dividerW / 2, y: 25, width: dividerW, height: 5))
-                divider.backgroundColor = UIColor.black
-                self.addSubview(divider)
-                
-                let text = "\(numberFormatter.string(from: NSNumber(value: (x / gradient.frame.size.width).native))!)"
-                let labelWidth = ChartUtils.textSize(text, font: UIFont(name: "Helvetica", size: 11) ?? UIFont.systemFont(ofSize: 11)).width
-                let label = UILabel()
-                label.center = CGPoint(x: x - labelWidth / 2, y: 30)
-                label.font = UIFont(name: "Helvetica", size: 11) ?? UIFont.systemFont(ofSize: 11)
-                label.text = text
-                label.sizeToFit()
-                
-                self.addSubview(label)
-            }
+
         }
         
         func colorForPercentage(_ percentage: Double) -> UIColor {
