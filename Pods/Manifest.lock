@@ -24,12 +24,23 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.16.0):
     - FBSDKCoreKit
+  - SwiftCharts (0.4)
 
 DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
   - FacebookShare
   - FBSDKCoreKit
+  - SwiftCharts (from `https://github.com/i-schuetz/SwiftCharts.git`)
+
+EXTERNAL SOURCES:
+  SwiftCharts:
+    :git: https://github.com/i-schuetz/SwiftCharts.git
+
+CHECKOUT OPTIONS:
+  SwiftCharts:
+    :commit: 1705b493b9239cbeb74c484eb9fa9694e42e5b7d
+    :git: https://github.com/i-schuetz/SwiftCharts.git
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -39,7 +50,8 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
   FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
   FBSDKShareKit: e81505de17fc0624cbaa87b83cccc9f2a786e6cb
+  SwiftCharts: 84b43d9d70b791459ff5f50ae5a6704326de309d
 
-PODFILE CHECKSUM: 9b6df21e63aa708d2f7a498d6845153b3b2cf319
+PODFILE CHECKSUM: db698dfceeddd7b6c1004c977f25f8816425b026
 
 COCOAPODS: 1.1.0.rc.2

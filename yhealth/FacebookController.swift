@@ -12,6 +12,9 @@ import FacebookShare
 import FBSDKCoreKit
 
 class FacebookController: UIViewController {
+    
+    var adminTouch: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -73,6 +76,19 @@ class FacebookController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func admintouch(_ sender: Any) {
+        self.adminTouch += 1
+        
+        if self.adminTouch >= 3 {
+            let storyboard = UIStoryboard.init(name: "Admin", bundle: nil)
+            let viewC = storyboard.instantiateViewController(withIdentifier: "welcome")
+            
+            self.present(viewC, animated: true, completion: nil)
+        }
+    }
+    
 
 
 }

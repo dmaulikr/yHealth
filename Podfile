@@ -10,6 +10,9 @@ target 'yhealth' do
   pod 'FacebookShare'
 
   pod 'FBSDKCoreKit'
+    
+  pod 'SwiftCharts', :git => 'https://github.com/i-schuetz/SwiftCharts.git'
+
 
   target 'yhealthTests' do
     inherit! :search_paths

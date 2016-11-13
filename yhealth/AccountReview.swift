@@ -23,6 +23,9 @@ class AccountReview: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let tap: UIGestureRecognizer = UIGestureRecognizer(target: self, action: "dismissKey")
+        view.addGestureRecognizer(tap)
+        
         self.FBProfile = FBPassedProf
         print("PRINTING FB PASSED DATA \(FBProfile)")
         
@@ -31,6 +34,7 @@ class AccountReview: UIViewController {
         email.text = self.FBProfile["email"] as! String?
         gender.text = self.FBProfile["gender"] as! String?
         
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,7 +43,10 @@ class AccountReview: UIViewController {
     }
     @IBAction func confirmedButt(_ sender: Any) {
     
-        
-        
     }
+    
+    func dismissKey (){
+        view.endEditing(true)
+    }
+    
 }

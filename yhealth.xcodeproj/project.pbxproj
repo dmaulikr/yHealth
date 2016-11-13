@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A086FCCC0D84AE509E28DF6 /* Pods_yhealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DD628242AD7D6FE4A39FE5 /* Pods_yhealthUITests.framework */; };
 		23FF939F30BFB2284E4BBC5F /* Pods_yhealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA977F4037D825FAB9930B /* Pods_yhealth.framework */; };
+		4C3BCEC71DD84E14009A75CA /* ChartsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BCEC61DD84E14009A75CA /* ChartsController.swift */; };
 		4C440C331DD76F230097CD38 /* AccountReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C440C321DD76F230097CD38 /* AccountReview.swift */; };
+		4C9205FF1DD85E5C00CD094E /* AdminP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9205FE1DD85E5C00CD094E /* AdminP.swift */; };
 		4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552931DD6D625007D7236 /* AppDelegate.swift */; };
 		4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552951DD6D625007D7236 /* FacebookController.swift */; };
 		4C9552991DD6D625007D7236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9552971DD6D625007D7236 /* Main.storyboard */; };
@@ -53,7 +55,9 @@
 		13AA977F4037D825FAB9930B /* Pods_yhealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3970E75E539E0AE5A2B002B1 /* Pods-yhealthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthUITests/Pods-yhealthUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47B2E0BB65DC88426FD5CFAA /* Pods-yhealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealth/Pods-yhealth.release.xcconfig"; sourceTree = "<group>"; };
+		4C3BCEC61DD84E14009A75CA /* ChartsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsController.swift; sourceTree = "<group>"; };
 		4C440C321DD76F230097CD38 /* AccountReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountReview.swift; sourceTree = "<group>"; };
+		4C9205FE1DD85E5C00CD094E /* AdminP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminP.swift; sourceTree = "<group>"; };
 		4C9552901DD6D625007D7236 /* yhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9552931DD6D625007D7236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C9552951DD6D625007D7236 /* FacebookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookController.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				4C9552951DD6D625007D7236 /* FacebookController.swift */,
 				4C9552C31DD6FAFB007D7236 /* ViewController.swift */,
 				4C440C321DD76F230097CD38 /* AccountReview.swift */,
+				4C3BCEC61DD84E14009A75CA /* ChartsController.swift */,
+				4C9205FE1DD85E5C00CD094E /* AdminP.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -557,6 +563,8 @@
 				4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */,
 				4CA8D5311DD707640085AA51 /* ARKit.m in Sources */,
 				4CA8D5511DD7119F0085AA51 /* MarkerView.swift in Sources */,
+				4C3BCEC71DD84E14009A75CA /* ChartsController.swift in Sources */,
+				4C9205FF1DD85E5C00CD094E /* AdminP.swift in Sources */,
 				4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */,
 				4CA8D5461DD70AAF0085AA51 /* Extends.swift in Sources */,
 				4CA8D5301DD707640085AA51 /* ARGeoCoordinate.m in Sources */,
@@ -656,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -699,7 +707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
