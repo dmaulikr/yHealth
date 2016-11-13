@@ -11,7 +11,7 @@ An iOS transition for controllers based on material design.
 
 With [CocoaPods](http://cocoapods.org/), add this line to your Podfile.
 
-    pod 'JTMaterialTransition', '~> 1.0'
+    pod 'JTMaterialTransition', '~> 2.0'
 
 ## Screenshots
 
@@ -21,74 +21,31 @@ With [CocoaPods](http://cocoapods.org/), add this line to your Podfile.
 
 ### Basic usage
 
-```objective-c
-#import <UIKit/UIKit.h>
+```swift
+import UIKit
+import JTMaterialTransition
 
-// You have to implement UIViewControllerTransitioningDelegate protocol
-@interface ViewController : UIViewController<UIViewControllerTransitioningDelegate>
-@end
+class ViewController: UIViewController {
 
-```
+    weak var presentControllerButton: UIButton?
+    var transition: JTMaterialTransition?
 
-```objective-c
-#import "ViewController.h"
-
-#import <JTMaterialTransition.h>
-#import "SecondViewController.h"
-
-@implementation ViewController
-
-@interface ViewController ()
-
-@property (nonatomic) JTMaterialTransition *transition;
-@property (nonatomic) UIButton *presentControllerButton;
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.transition = JTMaterialTransition(animatedView: self.presentControllerButton)
+    }
     
-    // No specific moment to call this method, just before presenting a controller
-    [self createTransition];
-}
+    func didPresentControllerButtonTouch () {
+        let controller = SecondViewController()
+        
+        controller.modalPresentationStyle = .custom
+        controller.transitioningDelegate = self.transition
+        
+        self.present(controller, animated: true, completion: nil)
+    }
 
-- (void)didPresentControllerButtonTouch
-{
-    // The controller you want to present
-    UIViewController *controller = [SecondViewController new];
-    
-    // Indicate you use a custom transition
-    controller.modalPresentationStyle = UIModalPresentationCustom;
-    controller.transitioningDelegate = self;
-
-    [self presentViewController:controller animated:YES completion:nil];
 }
-
-// Initialize the tansition
-- (void)createTransition
-{
-    // self.presentControllerButton is the animatedView used for the transition
-    self.transition = [[JTMaterialTransition alloc] initWithAnimatedView:self.presentControllerButton];
-}
-
-// Indicate which transition to use when you this controller present a controller
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
-                                                                  presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-{
-    self.transition.reverse = NO;
-    return self.transition;
-}
-
-// Indicate which transition to use when the presented controller is dismissed
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-{
-    self.transition.reverse = YES;
-    return self.transition;
-}
-@end
 ```
 
 ## Notes
@@ -98,16 +55,16 @@ If you don't want to provide a view, you have to set `startFrame` and `startBack
 
 `startFrame` must be the coordinates relative to the window:
 
-    CGRect startFrame = [_animatedView.superview convertRect:_animatedView.frame toView:nil];
+    var startFrame = animatedView.superview?.convert(animatedView.frame, to: nil)
 
 ## Warning
 
-The controller presented must have a `backgroundColor` else the effect can be a little strange. If you use a `UINavigationController` or another container don't forget to set the `backgroundColor` with `controllerPresented.view.backgroundColor = [UIColor yourColor];`.
+The controller presented must have a `backgroundColor` else the effect can be a little strange. If you use a `UINavigationController` or another container don't forget to set the `backgroundColor` with `controllerPresented.view.backgroundColor = UIColor.yourColor`.
 
 ## Requirements
 
-- iOS 7 or higher
-- Automatic Reference Counting (ARC)
+- iOS 8.0 or higher
+- Swift 3.0
 
 ## Author
 

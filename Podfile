@@ -13,7 +13,7 @@ target 'yhealth' do
     
   pod 'SwiftCharts', :git => 'https://github.com/i-schuetz/SwiftCharts.git'
 
-  pod 'JTMaterialTransition', '~> 2.0'
+  pod 'JTMaterialTransition', :git => 'https://github.com/jonathantribouharet/JTMaterialTransition.git'
 
 
   target 'yhealthTests' do

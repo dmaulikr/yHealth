@@ -21,7 +21,7 @@ class DHChooseController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         createPresentControllerButton(width: 50)
-        self.transition = JTMaterialTransition(animatedView: self.presentControllerButton)
+        self.transition = JTMaterialTransition(animatedView: self.presentControllerButton!)
 
     }
     
@@ -55,8 +55,7 @@ class DHChooseController: UIViewController {
         let controller = SecondViewController()
         
         controller.modalPresentationStyle = .custom
-        controller.transitioningDelegate = self.transition as! UIViewControllerTransitioningDelegate?
-        
+        controller.transitioningDelegate = self.transition
         self.present(controller, animated: true, completion: nil)
     }
 
