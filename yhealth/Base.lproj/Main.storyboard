@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="et7-BK-5sX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -96,7 +96,7 @@
         <!--choosing view-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="insure" id="BYZ-38-t0r" userLabel="choosing view" customClass="ViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="insure" id="BYZ-38-t0r" userLabel="choosing view" customClass="DHChooseController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -116,9 +116,6 @@
                                 <state key="normal" title="DENTAL" backgroundImage="green-circle">
                                     <color key="titleColor" red="0.17774549531106903" green="0.18231233465608465" blue="0.0017827605223281872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="GZ8-1C-phu" kind="show" id="mYu-Z8-oLJ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-KE-pzu">
                                 <rect key="frame" x="245" y="503" width="80" height="80"/>
@@ -164,7 +161,7 @@
         <!--dental chosen view-->
         <scene sceneID="urz-Ug-vqD">
             <objects>
-                <viewController id="GZ8-1C-phu" userLabel="dental chosen view" customClass="ViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chosen" id="GZ8-1C-phu" userLabel="dental chosen view" customClass="ViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kaa-CQ-FKk"/>
                         <viewControllerLayoutGuide type="bottom" id="2dq-18-cQt"/>
@@ -684,9 +681,8 @@
         <image name="yhealth-name" width="2000" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Thg-1j-cNZ"/>
-        <segue reference="Qn0-7T-3hf"/>
+        <segue reference="qYI-tu-dh8"/>
+        <segue reference="mUb-CE-sTk"/>
         <segue reference="kiu-8Y-XNA"/>
-        <segue reference="55f-n3-WHK"/>
     </inferredMetricsTieBreakers>
 </document>

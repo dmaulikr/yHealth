@@ -1,6 +1,0 @@
-framework module Pods_yhealthTests {
-  umbrella header "Pods-yhealthTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

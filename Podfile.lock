@@ -24,6 +24,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.16.0):
     - FBSDKCoreKit
+  - JTMaterialTransition (1.0.5)
   - SwiftCharts (0.4)
 
 DEPENDENCIES:
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - FacebookLogin
   - FacebookShare
   - FBSDKCoreKit
+  - JTMaterialTransition
   - SwiftCharts (from `https://github.com/i-schuetz/SwiftCharts.git`)
 
 EXTERNAL SOURCES:
@@ -50,8 +52,9 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
   FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
   FBSDKShareKit: e81505de17fc0624cbaa87b83cccc9f2a786e6cb
+  JTMaterialTransition: 7b2a19927baa47e42312df941cbc5132dc4484ca
   SwiftCharts: 84b43d9d70b791459ff5f50ae5a6704326de309d
 
-PODFILE CHECKSUM: db698dfceeddd7b6c1004c977f25f8816425b026
+PODFILE CHECKSUM: 477c58a6a8017350f8b3a577184ebac6303fc02c
 
 COCOAPODS: 1.1.0.rc.2

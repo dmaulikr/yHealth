@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4BD40C588A4B8431B98708A9289EB383'
-               BlueprintName = 'SwiftCharts'
+               BlueprintIdentifier = 'F619E87BFE638E6588E80CA42CAFB77E'
+               BlueprintName = 'JTMaterialTransition'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftCharts.framework'>
+               BuildableName = 'JTMaterialTransition.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -13,6 +13,8 @@ target 'yhealth' do
     
   pod 'SwiftCharts', :git => 'https://github.com/i-schuetz/SwiftCharts.git'
 
+  pod 'JTMaterialTransition', '~> 2.0'
+
 
   target 'yhealthTests' do
     inherit! :search_paths
