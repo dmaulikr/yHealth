@@ -8,23 +8,25 @@
 
 import UIKit
 
-class SecondViewController: UIViewController{
-
-override func viewDidLoad() {
-    super.viewDidLoad()
+class SecondHealthViewController: UIViewController{
     
-    self.view.backgroundColor = UIColor(colorLiteralRed: 54.0 / 256.0, green: 70.0 / 256.0, blue: 93 / 256.0, alpha: 1.0)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(colorLiteralRed: 54.0 / 256.0, green: 70.0 / 256.0, blue: 93 / 256.0, alpha: 1.0)
+        
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        label.center = CGPoint(x: 300, y: 385)
+        label.textAlignment = .center
+        label.text = "YOU CHOSE HEALTH"
+        label.textColor = UIColor.white
+        self.view.addSubview(label)
+        
+        createCloseButton()
+        
+    }
     
-    let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
-    label.center = CGPoint(x: 300, y: 385)
-    label.textAlignment = .center
-    label.text = "YOU CHOSE DENTAL"
-    label.textColor = UIColor.white
-    self.view.addSubview(label)
-    
-    createCloseButton()
-}
-
     func createCloseButton () {
         let y: CGFloat = 500.0
         let width: CGFloat = 50.0
@@ -36,11 +38,11 @@ override func viewDidLoad() {
         closeButton.addTarget(self, action: #selector(didCloseButtonTouch), for: .touchUpInside)
         self.view.addSubview(closeButton)
     }
-
+    
     func didCloseButtonTouch () {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let viewC = storyboard.instantiateViewController(withIdentifier: "dentalCOPAY")
-                self.present(viewC, animated: true, completion: nil)
+        let viewC = storyboard.instantiateViewController(withIdentifier: "healthCOPAY")
+        self.present(viewC, animated: true, completion: nil)
     }
-
+    
 }

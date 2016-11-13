@@ -4,15 +4,27 @@
 <array>
 	<dict>
 		<key>logoName</key>
+		<string>logo3</string>
+		<key>title</key>
+		<string>ADMIN MODE</string>
+		<key>description</key>
+		<string>Swipe for App Analytics</string>
+		<key>percentage</key>
+		<integer>0</integer>
+		<key>color</key>
+		<string>FF9800</string>
+	</dict>
+	<dict>
+		<key>logoName</key>
 		<string>yhealth-heart-hands</string>
 		<key>title</key>
-		<string>ACME</string>
+		<string>UNITED</string>
 		<key>description</key>
-		<string>Some ACME description?</string>
+		<string>&quot;help people live healthier lives&quot;</string>
 		<key>percentage</key>
-		<integer>42</integer>
+		<integer>22</integer>
 		<key>color</key>
-		<string>5c91fc</string>
+		<string>FF9800</string>
 	</dict>
 	<dict>
 		<key>logoName</key>
@@ -20,7 +32,7 @@
 		<key>title</key>
 		<string>CIGNA</string>
 		<key>description</key>
-		<string>Some CIGNA description?</string>
+		<string>&quot;helping people make healthier decisions&quot;</string>
 		<key>percentage</key>
 		<integer>36</integer>
 		<key>color</key>
@@ -30,13 +42,13 @@
 		<key>logoName</key>
 		<string>yhealth-heart-hands</string>
 		<key>title</key>
-		<string>UNITED</string>
+		<string>ACME</string>
 		<key>description</key>
-		<string>Some UNITED description?</string>
+		<string>&quot;making educated health decisions&quot;</string>
 		<key>percentage</key>
-		<integer>22</integer>
+		<integer>42</integer>
 		<key>color</key>
-		<string>FF9800</string>
+		<string>5c91fc</string>
 	</dict>
 </array>
 </plist>

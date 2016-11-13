@@ -61,7 +61,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         let lastLocation = locations.last as! CLLocation
         if (currentLocation == nil) {
-            randomLocation(lastLocation, number: 10)
+            randomLocation(lastLocation)
         }
         currentLocation = lastLocation
         
@@ -77,12 +77,71 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         self._mapView.showsUserLocation = true
     }
     
-    func randomLocation(_ location:CLLocation, number:Int) {
-        for _ in 1...number {
-            let newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
-            let place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. B Walters", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+    func randomLocation(_ location:CLLocation) {
+            var newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+            var place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. B Walters", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
             locations.append(place)
-        }
+        
+        
+                newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr.Jack Mehoff", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+
+        
+        
+        newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+         place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. Debois - Optometry", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+        
+        newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. Rufus - OBGYN", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+        
+         newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. Jennifer Slutsky - Optometry", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+        
+        
+         newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. OMG", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+        
+    newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. B Walters", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+        
+    newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+         place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. Wang - OBGYN", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+        
+         newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. Tom Robsky", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
+        
+        
+         newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
+        place = Place(_location: newLocation, _reference: "_reference", _placeName: "Dr. Kill More", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+        locations.append(place)
+        
         showLocations()
     }
     

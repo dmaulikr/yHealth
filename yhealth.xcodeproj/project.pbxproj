@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A086FCCC0D84AE509E28DF6 /* Pods_yhealthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DD628242AD7D6FE4A39FE5 /* Pods_yhealthUITests.framework */; };
 		23FF939F30BFB2284E4BBC5F /* Pods_yhealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AA977F4037D825FAB9930B /* Pods_yhealth.framework */; };
+		4C27F9491DD8AD340017598C /* SecondHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27F9481DD8AD340017598C /* SecondHealthViewController.swift */; };
 		4C3BCEC71DD84E14009A75CA /* ChartsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BCEC61DD84E14009A75CA /* ChartsController.swift */; };
 		4C440C331DD76F230097CD38 /* AccountReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C440C321DD76F230097CD38 /* AccountReview.swift */; };
 		4C9205FF1DD85E5C00CD094E /* AdminP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9205FE1DD85E5C00CD094E /* AdminP.swift */; };
@@ -77,6 +78,7 @@
 		13AA977F4037D825FAB9930B /* Pods_yhealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yhealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3970E75E539E0AE5A2B002B1 /* Pods-yhealthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealthUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealthUITests/Pods-yhealthUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47B2E0BB65DC88426FD5CFAA /* Pods-yhealth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yhealth.release.xcconfig"; path = "Pods/Target Support Files/Pods-yhealth/Pods-yhealth.release.xcconfig"; sourceTree = "<group>"; };
+		4C27F9481DD8AD340017598C /* SecondHealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondHealthViewController.swift; sourceTree = "<group>"; };
 		4C3BCEC61DD84E14009A75CA /* ChartsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsController.swift; sourceTree = "<group>"; };
 		4C440C321DD76F230097CD38 /* AccountReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountReview.swift; sourceTree = "<group>"; };
 		4C9205FE1DD85E5C00CD094E /* AdminP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminP.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				4C9205FE1DD85E5C00CD094E /* AdminP.swift */,
 				4C92722C1DD896300079E9AC /* DHChooseController.swift */,
 				4C92722E1DD89A440079E9AC /* SecondViewController.swift */,
+				4C27F9481DD8AD340017598C /* SecondHealthViewController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				4CA8D54D1DD70B590085AA51 /* CameraViewController.swift in Sources */,
 				4C92060D1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift in Sources */,
 				4C92061F1DD8828E00CD094E /* EatFitSlideViewController.swift in Sources */,
+				4C27F9491DD8AD340017598C /* SecondHealthViewController.swift in Sources */,
 				4C9206121DD8821500CD094E /* UIView+YALAppearance.swift in Sources */,
 				4C9206091DD881D300CD094E /* UIColor+Extention.swift in Sources */,
 				4C440C331DD76F230097CD38 /* AccountReview.swift in Sources */,

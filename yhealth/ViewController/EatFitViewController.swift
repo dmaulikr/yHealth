@@ -32,6 +32,9 @@ class EatFitViewController: UIViewController {
     
     weak var dataSource: EatFitViewControllerDataSource!
 
+    var adminTouch: Int = 0
+
+
     @IBOutlet weak var pageViewContainer: UIView!
     @IBOutlet weak var pageControl: EatFitPageControl!
     
@@ -71,5 +74,18 @@ class EatFitViewController: UIViewController {
             pageControl.selectButton(at: 0)
             pageViewController.yal_setViewControllers(pages)
         }
+    }
+    
+    @IBAction func homeLogo(_ sender: Any) {
+        self.adminTouch += 1
+        
+        if self.adminTouch >= 3 {
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let viewC = storyboard.instantiateViewController(withIdentifier: "facebookWell")
+            
+            self.present(viewC, animated: true, completion: nil)
+        }
+        
+        
     }
 }

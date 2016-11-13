@@ -32,9 +32,8 @@ class AccountReview: UIViewController {
         
         
         let min = self.FBProfile["age_range"]!["min"]!! as! NSNumber
-        let max = self.FBProfile["age_range"]!["max"]!! as! NSNumber
         
-        age.text = "\(min) - \(max)"
+        age.text = "\(min)"
         
     
     }

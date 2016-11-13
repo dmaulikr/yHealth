@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64t-uj-jRB">
-                                <rect key="frame" x="318" y="636" width="46" height="46"/>
+                                <rect key="frame" x="313" y="636" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Z3U-yM-Dlx"/>
                                     <constraint firstAttribute="width" constant="46" id="i2Y-OX-KLC"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGP-nr-Lga">
-                                <rect key="frame" x="162" y="268" width="90" height="28"/>
+                                <rect key="frame" x="160" y="268" width="95" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -45,19 +45,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nO-SB-NFU">
-                                <rect key="frame" x="162" y="232" width="90" height="28"/>
+                                <rect key="frame" x="160" y="232" width="95" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age-range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke6-ak-mP8">
-                                <rect key="frame" x="162" y="456" width="95" height="28"/>
+                                <rect key="frame" x="160" y="456" width="95" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2I-tA-CnV">
-                                <rect key="frame" x="55" y="304" width="309" height="28"/>
+                                <rect key="frame" x="55" y="304" width="304" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,6 +75,7 @@
                             <constraint firstItem="gGP-nr-Lga" firstAttribute="top" secondItem="4nO-SB-NFU" secondAttribute="bottom" constant="8" symbolic="YES" id="Jt2-jZ-90m"/>
                             <constraint firstItem="2h0-Jt-NqT" firstAttribute="top" secondItem="K2I-tA-CnV" secondAttribute="bottom" constant="88" id="W5X-VF-asf"/>
                             <constraint firstItem="K2I-tA-CnV" firstAttribute="trailing" secondItem="64t-uj-jRB" secondAttribute="trailing" id="d06-JX-zX4"/>
+                            <constraint firstItem="ke6-ak-mP8" firstAttribute="centerX" secondItem="5KG-td-2Q6" secondAttribute="centerX" id="fn2-Hf-iNE"/>
                             <constraint firstItem="QTm-wD-Gtx" firstAttribute="top" secondItem="64t-uj-jRB" secondAttribute="bottom" constant="54" id="hdZ-NX-VI2"/>
                             <constraint firstItem="ke6-ak-mP8" firstAttribute="top" secondItem="2h0-Jt-NqT" secondAttribute="bottom" constant="8" symbolic="YES" id="i4t-hN-ZT7"/>
                             <constraint firstItem="gGP-nr-Lga" firstAttribute="centerX" secondItem="2h0-Jt-NqT" secondAttribute="centerX" id="jsT-18-h0A"/>
@@ -113,20 +114,17 @@
                                 <rect key="frame" x="127" y="503" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
-                                <state key="normal" title="DENTAL" backgroundImage="green-circle">
-                                    <color key="titleColor" red="0.17774549531106903" green="0.18231233465608465" blue="0.0017827605223281872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="DENTAL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-KE-pzu">
                                 <rect key="frame" x="245" y="503" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
-                                <state key="normal" title="HEALTH" backgroundImage="green-circle">
-                                    <color key="titleColor" red="0.1777454953" green="0.18231233469999999" blue="0.0017827605220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="HEALTH">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="0qA-o1-3rR" kind="show" id="qYI-tu-dh8"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you want insurance for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNP-2Q-hLF">
                                 <rect key="frame" x="80" y="344" width="254" height="24"/>
@@ -147,71 +145,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="yhealth-back"/>
                                 <connections>
-                                    <segue destination="ZW8-VI-X1m" kind="show" id="zjs-Gz-fOU"/>
+                                    <segue destination="ZW8-VI-X1m" kind="show" id="e3v-Q8-Uhe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.8666666666666667" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="presentCB" destination="RNW-bR-DqL" id="VDZ-uP-pMh"/>
+                        <outlet property="presentCBHealth" destination="hxI-KE-pzu" id="6j7-S5-2AJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
         </scene>
-        <!--dental chosen view-->
-        <scene sceneID="urz-Ug-vqD">
-            <objects>
-                <viewController storyboardIdentifier="chosen" id="GZ8-1C-phu" userLabel="dental chosen view" customClass="SecondViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kaa-CQ-FKk"/>
-                        <viewControllerLayoutGuide type="bottom" id="2dq-18-cQt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HpU-wh-jdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU CHOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUI-rk-EPs">
-                                <rect key="frame" x="157" y="356" width="100" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-bt-NXo">
-                                <rect key="frame" x="111" y="425" width="193" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="DENTAL" backgroundImage="red-circle">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="J6e-wS-CbX" kind="show" id="tWL-O3-dte"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoN" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-XE-7Rs">
-                                <rect key="frame" x="39" y="98" width="375" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-J4-Asu">
-                                <rect key="frame" x="20" y="28" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="yhealth-back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="mUb-CE-sTk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.8666666666666667" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7hX-WY-vzS" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="864" y="-206"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="sFb-TH-3ws">
             <objects>
-                <viewController id="Tlq-4W-l9v" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="healthCOPAY" id="Tlq-4W-l9v" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WsZ-HF-l7i"/>
                         <viewControllerLayoutGuide type="bottom" id="6j7-o5-aFv"/>
@@ -311,7 +263,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="yhealth-back"/>
                                 <connections>
-                                    <segue destination="0qA-o1-3rR" kind="show" id="Thg-1j-cNZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="J7c-aM-63e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -325,7 +277,7 @@
         <!--facebook view-->
         <scene sceneID="Nqq-vd-Qbt">
             <objects>
-                <viewController id="et7-BK-5sX" userLabel="facebook view" customClass="FacebookController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="facebookWell" id="et7-BK-5sX" userLabel="facebook view" customClass="FacebookController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ND5-DD-ZTY"/>
                         <viewControllerLayoutGuide type="bottom" id="EkT-ft-8G8"/>
@@ -365,7 +317,7 @@
         <!--admin password view-->
         <scene sceneID="3rI-RH-sJ1">
             <objects>
-                <viewController id="aly-co-WEE" userLabel="admin password view" customClass="AdminLogin" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Admin" id="aly-co-WEE" userLabel="admin password view" customClass="AdminLogin" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gao-aC-UKa"/>
                         <viewControllerLayoutGuide type="bottom" id="ClH-Ev-9Li"/>
@@ -422,56 +374,6 @@
             </objects>
             <point key="canvasLocation" x="-568.1159420289855" y="1980.9782608695655"/>
         </scene>
-        <!--health chosen view-->
-        <scene sceneID="S4H-Av-4Ez">
-            <objects>
-                <viewController id="0qA-o1-3rR" userLabel="health chosen view" customClass="ViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VTv-TE-HSt"/>
-                        <viewControllerLayoutGuide type="bottom" id="FRe-cO-0Mh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pgS-yX-NdD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoN" translatesAutoresizingMaskIntoConstraints="NO" id="4rA-fs-Ikh">
-                                <rect key="frame" x="39" y="128" width="375" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU CHOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsx-yy-oUZ">
-                                <rect key="frame" x="166" y="355" width="100" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfs-aQ-ZMq">
-                                <rect key="frame" x="120" y="416" width="193" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="HEALTH" backgroundImage="red-circle">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Tlq-4W-l9v" kind="show" id="NR8-f4-LeK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-2t-eql">
-                                <rect key="frame" x="20" y="20" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="yhealth-back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="o2W-WD-JbE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VIE-Me-uxf" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="897" y="551"/>
-        </scene>
         <!--AR view-->
         <scene sceneID="s3Z-H6-dla">
             <objects>
@@ -492,17 +394,25 @@
                                     <segue destination="eOI-PG-fon" kind="show" id="wHb-VG-iti"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-Ll-qSq">
+                                <rect key="frame" x="27" y="640" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="home"/>
+                                <connections>
+                                    <segue destination="et7-BK-5sX" kind="show" id="LdR-ok-dWX"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFg-r1-bYl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975" y="-119"/>
+            <point key="canvasLocation" x="529" y="809"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="OfZ-ve-yyt">
             <objects>
-                <viewController id="eOI-PG-fon" customClass="MapViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapping" id="eOI-PG-fon" customClass="MapViewController" customModule="yhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ocx-ia-cYy"/>
                         <viewControllerLayoutGuide type="bottom" id="uzJ-bS-rra"/>
@@ -538,7 +448,7 @@
         <!--dental rates view-->
         <scene sceneID="rby-au-9dY">
             <objects>
-                <viewController id="J6e-wS-CbX" userLabel="dental rates view" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dentalCOPAY" id="J6e-wS-CbX" userLabel="dental rates view" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rbo-6L-2lj"/>
                         <viewControllerLayoutGuide type="bottom" id="8m9-05-Xlr"/>
@@ -638,7 +548,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="yhealth-back"/>
                                 <connections>
-                                    <segue destination="GZ8-1C-phu" kind="show" id="Qn0-7T-3hf"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9jQ-i1-Pu0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -671,18 +581,16 @@
     <resources>
         <image name="admin-logo" width="2000" height="2000"/>
         <image name="checked" width="512" height="512"/>
-        <image name="green-circle" width="2000" height="2000"/>
+        <image name="home" width="2000" height="2000"/>
         <image name="insurance-gray-back" width="2000" height="500"/>
         <image name="internet" width="512" height="512"/>
         <image name="logoN" width="2000" height="2000"/>
         <image name="photo-cam" width="512" height="512"/>
-        <image name="red-circle" width="2000" height="2000"/>
         <image name="yhealth-back" width="2000" height="2000"/>
         <image name="yhealth-name" width="2000" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qYI-tu-dh8"/>
-        <segue reference="mUb-CE-sTk"/>
-        <segue reference="kiu-8Y-XNA"/>
+        <segue reference="grk-Tq-yhM"/>
+        <segue reference="55f-n3-WHK"/>
     </inferredMetricsTieBreakers>
 </document>

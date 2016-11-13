@@ -82,9 +82,9 @@ class FacebookController: UIViewController {
         self.adminTouch += 1
         
         if self.adminTouch >= 3 {
-            let storyboard = UIStoryboard.init(name: "Admin", bundle: nil)
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
             let viewC = storyboard.instantiateViewController(withIdentifier: "adminAnal")
-            
+                        
             self.present(viewC, animated: true, completion: nil)
         }
     }
