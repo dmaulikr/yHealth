@@ -34,7 +34,6 @@
 		4C92062B1DD8847200CD094E /* Objects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C92062A1DD8847200CD094E /* Objects.plist */; };
 		4C92722D1DD896300079E9AC /* DHChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92722C1DD896300079E9AC /* DHChooseController.swift */; };
 		4C92722F1DD89A440079E9AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92722E1DD89A440079E9AC /* SecondViewController.swift */; };
-		4C9272311DD89EB00079E9AC /* jtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9272301DD89EB00079E9AC /* jtViewController.swift */; };
 		4C9552941DD6D625007D7236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552931DD6D625007D7236 /* AppDelegate.swift */; };
 		4C9552961DD6D625007D7236 /* FacebookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9552951DD6D625007D7236 /* FacebookController.swift */; };
 		4C9552991DD6D625007D7236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9552971DD6D625007D7236 /* Main.storyboard */; };
@@ -103,7 +102,6 @@
 		4C92062A1DD8847200CD094E /* Objects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Objects.plist; sourceTree = "<group>"; };
 		4C92722C1DD896300079E9AC /* DHChooseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHChooseController.swift; sourceTree = "<group>"; };
 		4C92722E1DD89A440079E9AC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		4C9272301DD89EB00079E9AC /* jtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jtViewController.swift; sourceTree = "<group>"; };
 		4C9552901DD6D625007D7236 /* yhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9552931DD6D625007D7236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C9552951DD6D625007D7236 /* FacebookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookController.swift; sourceTree = "<group>"; };
@@ -289,9 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA8D5411DD70A340085AA51 /* AR Classes */,
-				4CA8D54F1DD710E20085AA51 /* Models */,
 				4C9552931DD6D625007D7236 /* AppDelegate.swift */,
-				4C9272301DD89EB00079E9AC /* jtViewController.swift */,
 				4C9552951DD6D625007D7236 /* FacebookController.swift */,
 				4C9552C31DD6FAFB007D7236 /* ViewController.swift */,
 				4C440C321DD76F230097CD38 /* AccountReview.swift */,
@@ -326,6 +322,7 @@
 		4CA8D5411DD70A340085AA51 /* AR Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CA8D54F1DD710E20085AA51 /* Models */,
 				4CA8D54C1DD70B590085AA51 /* MapViewController.swift */,
 				4CA8D54B1DD70B590085AA51 /* CameraViewController.swift */,
 				4CA8D5431DD70AAF0085AA51 /* Place.swift */,
@@ -663,7 +660,6 @@
 				4C9206111DD8821500CD094E /* UILabel+Animation.swift in Sources */,
 				4C9552C41DD6FAFB007D7236 /* ViewController.swift in Sources */,
 				4CA8D5321DD707640085AA51 /* AugmentedRealityController.m in Sources */,
-				4C9272311DD89EB00079E9AC /* jtViewController.swift in Sources */,
 				4C9206181DD8823F00CD094E /* UIPageViewController+YALPageController.swift in Sources */,
 				4CA8D54D1DD70B590085AA51 /* CameraViewController.swift in Sources */,
 				4C92060D1DD881FF00CD094E /* CAAnimationGroup+Sequence.swift in Sources */,

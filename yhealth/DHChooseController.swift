@@ -22,7 +22,7 @@ class DHChooseController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.presentCB.layer.cornerRadius = 70 / 2.0
-        self.presentCB.backgroundColor = UIColor(colorLiteralRed: 86.0 / 256.0, green: 188.0 / 256.0, blue: 138 / 256.0, alpha: 1.0)
+
         
         
         self.presentCB.addTarget(self, action: #selector(didPresentDentalControllerButtonTouch), for: .touchUpInside)
@@ -30,7 +30,6 @@ class DHChooseController: UIViewController {
 
         
         self.presentCBHealth.layer.cornerRadius = 70 / 2.0
-        self.presentCBHealth.backgroundColor = UIColor(colorLiteralRed: 245.0/256.0, green: 0.0 / 256.0, blue: 47 / 256.0, alpha: 1.0)
         
         
         self.presentCBHealth.addTarget(self, action: #selector(didPresentHealthControllerButtonTouch), for: .touchUpInside)
