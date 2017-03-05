@@ -15,7 +15,6 @@ class AccountReview: UIViewController {
     @IBOutlet weak var lname: UILabel!
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var gender: UILabel!
-    @IBOutlet weak var age: UILabel!
     
     var FBProfile: [String: AnyObject] = [:]
     var FBPassedProf: [String: AnyObject] = [:]
@@ -31,12 +30,7 @@ class AccountReview: UIViewController {
         gender.text = self.FBProfile["gender"] as! String?
         
         
-        let min = self.FBProfile["age_range"]!["min"]!! as! NSNumber
-
-        let max = self.FBProfile["age_range"]!["max"]!! as! NSNumber
-        
-        age.text = "\(min) - \(max)"
-        
+          
     
     }
     

@@ -57,7 +57,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
     }
     
-    func locationManager(_ manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    @nonobjc func locationManager(_ manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         
         let lastLocation = locations.last as! CLLocation
         if (currentLocation == nil) {
