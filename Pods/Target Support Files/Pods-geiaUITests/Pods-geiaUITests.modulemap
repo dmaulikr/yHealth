@@ -1,0 +1,6 @@
+framework module Pods_geiaUITests {
+  umbrella header "Pods-geiaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

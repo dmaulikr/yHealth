@@ -1,0 +1,21 @@
+PODS:
+  - JTMaterialTransition (2.0.1)
+
+DEPENDENCIES:
+  - JTMaterialTransition (from `https://github.com/jonathantribouharet/JTMaterialTransition.git`)
+
+EXTERNAL SOURCES:
+  JTMaterialTransition:
+    :git: https://github.com/jonathantribouharet/JTMaterialTransition.git
+
+CHECKOUT OPTIONS:
+  JTMaterialTransition:
+    :commit: eef7fa849fb992c362c7dfd2157e88feb46bb43a
+    :git: https://github.com/jonathantribouharet/JTMaterialTransition.git
+
+SPEC CHECKSUMS:
+  JTMaterialTransition: 2350b44b404d1982a7ba755866cc65da452f4eec
+
+PODFILE CHECKSUM: afd68f8b7d626bb4c9f9f68d79f1f30e5a3fcb5a
+
+COCOAPODS: 1.2.0

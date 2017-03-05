@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>JTMaterialTransition.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-geia.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-geiaTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-geiaUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0D6092967784175FB3AC7808A0DBB96F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2018EEAE0DF59F76F877F9355B8502EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C5C06162B7083791B45E46B4C78FD4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC70347E5BC6F58D7179F84652171AD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

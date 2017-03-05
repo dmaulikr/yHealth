@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0562BBB0BC3FF609C73B96D5 /* Pods_geia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028AED0EBABB0CED68D6B0E3 /* Pods_geia.framework */; };
+		343BD9CABD71E28F700BBECB /* Pods_geiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67781B4BABBAD19C4F0592DB /* Pods_geiaUITests.framework */; };
 		AC7755981E6CA31600F692FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755971E6CA31600F692FD /* AppDelegate.swift */; };
 		AC77559A1E6CA31600F692FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755991E6CA31600F692FD /* ViewController.swift */; };
 		AC77559D1E6CA31600F692FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC77559B1E6CA31600F692FD /* Main.storyboard */; };
@@ -14,6 +16,19 @@
 		AC7755A21E6CA31600F692FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7755A01E6CA31600F692FD /* LaunchScreen.storyboard */; };
 		AC7755AD1E6CA31600F692FD /* geiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755AC1E6CA31600F692FD /* geiaTests.swift */; };
 		AC7755B81E6CA31600F692FD /* geiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755B71E6CA31600F692FD /* geiaUITests.swift */; };
+		AC7755C91E6CAB9F00F692FD /* BusinessProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755C81E6CAB9F00F692FD /* BusinessProfile.swift */; };
+		AC7755DC1E6CB08A00F692FD /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7755D11E6CB08A00F692FD /* ARCoordinate.m */; };
+		AC7755DD1E6CB08A00F692FD /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7755D31E6CB08A00F692FD /* ARGeoCoordinate.m */; };
+		AC7755DE1E6CB08A00F692FD /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7755D51E6CB08A00F692FD /* ARKit.m */; };
+		AC7755DF1E6CB08A00F692FD /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7755D91E6CB08A00F692FD /* AugmentedRealityController.m */; };
+		AC7755E01E6CB08A00F692FD /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7755DB1E6CB08A00F692FD /* GEOLocations.m */; };
+		AC7755E81E6CB0D700F692FD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E21E6CB0D700F692FD /* CameraViewController.swift */; };
+		AC7755E91E6CB0D700F692FD /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E31E6CB0D700F692FD /* Extends.swift */; };
+		AC7755EA1E6CB0D700F692FD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E41E6CB0D700F692FD /* MapViewController.swift */; };
+		AC7755EB1E6CB0D700F692FD /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E51E6CB0D700F692FD /* MarkerView.swift */; };
+		AC7755EC1E6CB0D700F692FD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E61E6CB0D700F692FD /* Place.swift */; };
+		AC7755ED1E6CB0D700F692FD /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E71E6CB0D700F692FD /* PlaceAnnotation.swift */; };
+		C8556A1E07E3CD00ABC19D34 /* Pods_geiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D4BE7D9143969C6F9F4451 /* Pods_geiaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		028AED0EBABB0CED68D6B0E3 /* Pods_geia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D76726013C4707039D573A /* Pods-geiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geiaUITests/Pods-geiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52D4BE7D9143969C6F9F4451 /* Pods_geiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67781B4BABBAD19C4F0592DB /* Pods_geiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A40FB52383D9F8DC7A1FA4 /* Pods-geia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geia.release.xcconfig"; path = "Pods/Target Support Files/Pods-geia/Pods-geia.release.xcconfig"; sourceTree = "<group>"; };
+		7879C1C5B088F8265F66426E /* Pods-geiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geiaTests/Pods-geiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E33517518BCA7A29A139049 /* Pods-geia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geia/Pods-geia.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7755941E6CA31600F692FD /* geia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7755971E6CA31600F692FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC7755991E6CA31600F692FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +69,28 @@
 		AC7755B31E6CA31600F692FD /* geiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = geiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7755B71E6CA31600F692FD /* geiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geiaUITests.swift; sourceTree = "<group>"; };
 		AC7755B91E6CA31600F692FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7755C81E6CAB9F00F692FD /* BusinessProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessProfile.swift; sourceTree = "<group>"; };
+		AC7755CE1E6CAE6500F692FD /* ARBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARBridgeHeader.h; sourceTree = "<group>"; };
+		AC7755D01E6CB08A00F692FD /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCoordinate.h; path = AR/ARCoordinate.h; sourceTree = "<group>"; };
+		AC7755D11E6CB08A00F692FD /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARCoordinate.m; path = AR/ARCoordinate.m; sourceTree = "<group>"; };
+		AC7755D21E6CB08A00F692FD /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARGeoCoordinate.h; path = AR/ARGeoCoordinate.h; sourceTree = "<group>"; };
+		AC7755D31E6CB08A00F692FD /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARGeoCoordinate.m; path = AR/ARGeoCoordinate.m; sourceTree = "<group>"; };
+		AC7755D41E6CB08A00F692FD /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARKit.h; path = AR/ARKit.h; sourceTree = "<group>"; };
+		AC7755D51E6CB08A00F692FD /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARKit.m; path = AR/ARKit.m; sourceTree = "<group>"; };
+		AC7755D61E6CB08A00F692FD /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARLocationDelegate.h; path = AR/ARLocationDelegate.h; sourceTree = "<group>"; };
+		AC7755D71E6CB08A00F692FD /* ARViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARViewProtocol.h; path = AR/ARViewProtocol.h; sourceTree = "<group>"; };
+		AC7755D81E6CB08A00F692FD /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AugmentedRealityController.h; path = AR/AugmentedRealityController.h; sourceTree = "<group>"; };
+		AC7755D91E6CB08A00F692FD /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AugmentedRealityController.m; path = AR/AugmentedRealityController.m; sourceTree = "<group>"; };
+		AC7755DA1E6CB08A00F692FD /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEOLocations.h; path = AR/GEOLocations.h; sourceTree = "<group>"; };
+		AC7755DB1E6CB08A00F692FD /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEOLocations.m; path = AR/GEOLocations.m; sourceTree = "<group>"; };
+		AC7755E21E6CB0D700F692FD /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ar_classes/CameraViewController.swift; sourceTree = "<group>"; };
+		AC7755E31E6CB0D700F692FD /* Extends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extends.swift; path = ar_classes/Extends.swift; sourceTree = "<group>"; };
+		AC7755E41E6CB0D700F692FD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ar_classes/MapViewController.swift; sourceTree = "<group>"; };
+		AC7755E51E6CB0D700F692FD /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarkerView.swift; path = ar_classes/MarkerView.swift; sourceTree = "<group>"; };
+		AC7755E61E6CB0D700F692FD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = ar_classes/Place.swift; sourceTree = "<group>"; };
+		AC7755E71E6CB0D700F692FD /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceAnnotation.swift; path = ar_classes/PlaceAnnotation.swift; sourceTree = "<group>"; };
+		B80BB329B8E9E23E539B70C6 /* Pods-geiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geiaTests/Pods-geiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		B84D454EA7337EA4609DF583 /* Pods-geiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geiaUITests/Pods-geiaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0562BBB0BC3FF609C73B96D5 /* Pods_geia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8556A1E07E3CD00ABC19D34 /* Pods_geiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343BD9CABD71E28F700BBECB /* Pods_geiaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +124,13 @@
 		AC77558B1E6CA31600F692FD = {
 			isa = PBXGroup;
 			children = (
+				AC7755CF1E6CB07C00F692FD /* AR_framework */,
 				AC7755961E6CA31600F692FD /* geia */,
 				AC7755AB1E6CA31600F692FD /* geiaTests */,
 				AC7755B61E6CA31600F692FD /* geiaUITests */,
 				AC7755951E6CA31600F692FD /* Products */,
+				CEA46A22869BDF95C142B588 /* Pods */,
+				FBCEBF77633C23066B55B7FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +147,9 @@
 		AC7755961E6CA31600F692FD /* geia */ = {
 			isa = PBXGroup;
 			children = (
-				AC7755971E6CA31600F692FD /* AppDelegate.swift */,
-				AC7755991E6CA31600F692FD /* ViewController.swift */,
-				AC77559B1E6CA31600F692FD /* Main.storyboard */,
-				AC77559E1E6CA31600F692FD /* Assets.xcassets */,
-				AC7755A01E6CA31600F692FD /* LaunchScreen.storyboard */,
+				AC7755C71E6CAB8C00F692FD /* model */,
+				AC7755C61E6CA84600F692FD /* classes */,
+				AC7755C51E6CA83100F692FD /* resources */,
 				AC7755A31E6CA31600F692FD /* Info.plist */,
 			);
 			path = geia;
@@ -125,6 +173,90 @@
 			path = geiaUITests;
 			sourceTree = "<group>";
 		};
+		AC7755C51E6CA83100F692FD /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC77559E1E6CA31600F692FD /* Assets.xcassets */,
+				AC77559B1E6CA31600F692FD /* Main.storyboard */,
+				AC7755A01E6CA31600F692FD /* LaunchScreen.storyboard */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		AC7755C61E6CA84600F692FD /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC7755E11E6CB0CB00F692FD /* ar_classes */,
+				AC7755971E6CA31600F692FD /* AppDelegate.swift */,
+				AC7755991E6CA31600F692FD /* ViewController.swift */,
+				AC7755CE1E6CAE6500F692FD /* ARBridgeHeader.h */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		AC7755C71E6CAB8C00F692FD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AC7755C81E6CAB9F00F692FD /* BusinessProfile.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		AC7755CF1E6CB07C00F692FD /* AR_framework */ = {
+			isa = PBXGroup;
+			children = (
+				AC7755D01E6CB08A00F692FD /* ARCoordinate.h */,
+				AC7755D11E6CB08A00F692FD /* ARCoordinate.m */,
+				AC7755D21E6CB08A00F692FD /* ARGeoCoordinate.h */,
+				AC7755D31E6CB08A00F692FD /* ARGeoCoordinate.m */,
+				AC7755D41E6CB08A00F692FD /* ARKit.h */,
+				AC7755D51E6CB08A00F692FD /* ARKit.m */,
+				AC7755D61E6CB08A00F692FD /* ARLocationDelegate.h */,
+				AC7755D71E6CB08A00F692FD /* ARViewProtocol.h */,
+				AC7755D81E6CB08A00F692FD /* AugmentedRealityController.h */,
+				AC7755D91E6CB08A00F692FD /* AugmentedRealityController.m */,
+				AC7755DA1E6CB08A00F692FD /* GEOLocations.h */,
+				AC7755DB1E6CB08A00F692FD /* GEOLocations.m */,
+			);
+			name = AR_framework;
+			sourceTree = "<group>";
+		};
+		AC7755E11E6CB0CB00F692FD /* ar_classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC7755E21E6CB0D700F692FD /* CameraViewController.swift */,
+				AC7755E31E6CB0D700F692FD /* Extends.swift */,
+				AC7755E41E6CB0D700F692FD /* MapViewController.swift */,
+				AC7755E51E6CB0D700F692FD /* MarkerView.swift */,
+				AC7755E61E6CB0D700F692FD /* Place.swift */,
+				AC7755E71E6CB0D700F692FD /* PlaceAnnotation.swift */,
+			);
+			name = ar_classes;
+			sourceTree = "<group>";
+		};
+		CEA46A22869BDF95C142B588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E33517518BCA7A29A139049 /* Pods-geia.debug.xcconfig */,
+				70A40FB52383D9F8DC7A1FA4 /* Pods-geia.release.xcconfig */,
+				7879C1C5B088F8265F66426E /* Pods-geiaTests.debug.xcconfig */,
+				B80BB329B8E9E23E539B70C6 /* Pods-geiaTests.release.xcconfig */,
+				21D76726013C4707039D573A /* Pods-geiaUITests.debug.xcconfig */,
+				B84D454EA7337EA4609DF583 /* Pods-geiaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBCEBF77633C23066B55B7FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				028AED0EBABB0CED68D6B0E3 /* Pods_geia.framework */,
+				52D4BE7D9143969C6F9F4451 /* Pods_geiaTests.framework */,
+				67781B4BABBAD19C4F0592DB /* Pods_geiaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC7755BC1E6CA31600F692FD /* Build configuration list for PBXNativeTarget "geia" */;
 			buildPhases = (
+				2277C0602C5ACF2D1B0CE686 /* [CP] Check Pods Manifest.lock */,
 				AC7755901E6CA31600F692FD /* Sources */,
 				AC7755911E6CA31600F692FD /* Frameworks */,
 				AC7755921E6CA31600F692FD /* Resources */,
+				584C457BCFD3088B9B64D0BF /* [CP] Embed Pods Frameworks */,
+				5D032211DC25538FB3F94D9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC7755BF1E6CA31600F692FD /* Build configuration list for PBXNativeTarget "geiaTests" */;
 			buildPhases = (
+				A5752D0A493AB2AD989C89DE /* [CP] Check Pods Manifest.lock */,
 				AC7755A41E6CA31600F692FD /* Sources */,
 				AC7755A51E6CA31600F692FD /* Frameworks */,
 				AC7755A61E6CA31600F692FD /* Resources */,
+				D0F24D3D3512C65679DA2B30 /* [CP] Embed Pods Frameworks */,
+				C7A358AFE9C7BBE1EC26EB17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC7755C21E6CA31600F692FD /* Build configuration list for PBXNativeTarget "geiaUITests" */;
 			buildPhases = (
+				98117458E947A3CE29F0957A /* [CP] Check Pods Manifest.lock */,
 				AC7755AF1E6CA31600F692FD /* Sources */,
 				AC7755B01E6CA31600F692FD /* Frameworks */,
 				AC7755B11E6CA31600F692FD /* Resources */,
+				2087E9A63301A1DF9E56C34A /* [CP] Embed Pods Frameworks */,
+				18FC5B304AAD98FE9CF2817D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +398,163 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18FC5B304AAD98FE9CF2817D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geiaUITests/Pods-geiaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2087E9A63301A1DF9E56C34A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geiaUITests/Pods-geiaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2277C0602C5ACF2D1B0CE686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		584C457BCFD3088B9B64D0BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geia/Pods-geia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D032211DC25538FB3F94D9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geia/Pods-geia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98117458E947A3CE29F0957A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5752D0A493AB2AD989C89DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A358AFE9C7BBE1EC26EB17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geiaTests/Pods-geiaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F24D3D3512C65679DA2B30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geiaTests/Pods-geiaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC7755901E6CA31600F692FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7755EA1E6CB0D700F692FD /* MapViewController.swift in Sources */,
+				AC7755EC1E6CB0D700F692FD /* Place.swift in Sources */,
+				AC7755E01E6CB08A00F692FD /* GEOLocations.m in Sources */,
+				AC7755DC1E6CB08A00F692FD /* ARCoordinate.m in Sources */,
 				AC77559A1E6CA31600F692FD /* ViewController.swift in Sources */,
+				AC7755EB1E6CB0D700F692FD /* MarkerView.swift in Sources */,
+				AC7755ED1E6CB0D700F692FD /* PlaceAnnotation.swift in Sources */,
+				AC7755DF1E6CB08A00F692FD /* AugmentedRealityController.m in Sources */,
 				AC7755981E6CA31600F692FD /* AppDelegate.swift in Sources */,
+				AC7755DE1E6CB08A00F692FD /* ARKit.m in Sources */,
+				AC7755C91E6CAB9F00F692FD /* BusinessProfile.swift in Sources */,
+				AC7755E91E6CB0D700F692FD /* Extends.swift in Sources */,
+				AC7755DD1E6CB08A00F692FD /* ARGeoCoordinate.m in Sources */,
+				AC7755E81E6CB0D700F692FD /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +702,7 @@
 		};
 		AC7755BD1E6CA31600F692FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E33517518BCA7A29A139049 /* Pods-geia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G87HUM96UL;
@@ -418,12 +710,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jessicajoseph.geia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = geia/ARBridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		AC7755BE1E6CA31600F692FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A40FB52383D9F8DC7A1FA4 /* Pods-geia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G87HUM96UL;
@@ -431,12 +725,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jessicajoseph.geia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = geia/ARBridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		AC7755C01E6CA31600F692FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7879C1C5B088F8265F66426E /* Pods-geiaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +748,7 @@
 		};
 		AC7755C11E6CA31600F692FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80BB329B8E9E23E539B70C6 /* Pods-geiaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +764,7 @@
 		};
 		AC7755C31E6CA31600F692FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D76726013C4707039D573A /* Pods-geiaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = G87HUM96UL;
@@ -481,6 +779,7 @@
 		};
 		AC7755C41E6CA31600F692FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84D454EA7337EA4609DF583 /* Pods-geiaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = G87HUM96UL;
@@ -512,6 +811,7 @@
 				AC7755BE1E6CA31600F692FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC7755BF1E6CA31600F692FD /* Build configuration list for PBXNativeTarget "geiaTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +820,7 @@
 				AC7755C11E6CA31600F692FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC7755C21E6CA31600F692FD /* Build configuration list for PBXNativeTarget "geiaUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +829,7 @@
 				AC7755C41E6CA31600F692FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
