@@ -28,6 +28,8 @@
 		AC7755EB1E6CB0D700F692FD /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E51E6CB0D700F692FD /* MarkerView.swift */; };
 		AC7755EC1E6CB0D700F692FD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E61E6CB0D700F692FD /* Place.swift */; };
 		AC7755ED1E6CB0D700F692FD /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755E71E6CB0D700F692FD /* PlaceAnnotation.swift */; };
+		AC7755EF1E6CB9A400F692FD /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7755EE1E6CB9A400F692FD /* SettingController.swift */; };
+		AC7755F21E6CBBFB00F692FD /* WackySushi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC7755F11E6CBBFB00F692FD /* WackySushi.ttf */; };
 		C8556A1E07E3CD00ABC19D34 /* Pods_geiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D4BE7D9143969C6F9F4451 /* Pods_geiaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		AC7755E51E6CB0D700F692FD /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MarkerView.swift; path = ar_classes/MarkerView.swift; sourceTree = "<group>"; };
 		AC7755E61E6CB0D700F692FD /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = ar_classes/Place.swift; sourceTree = "<group>"; };
 		AC7755E71E6CB0D700F692FD /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceAnnotation.swift; path = ar_classes/PlaceAnnotation.swift; sourceTree = "<group>"; };
+		AC7755EE1E6CB9A400F692FD /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		AC7755F11E6CBBFB00F692FD /* WackySushi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = WackySushi.ttf; path = fonts/WackySushi.ttf; sourceTree = "<group>"; };
 		B80BB329B8E9E23E539B70C6 /* Pods-geiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geiaTests/Pods-geiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		B84D454EA7337EA4609DF583 /* Pods-geiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-geiaUITests/Pods-geiaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +180,7 @@
 		AC7755C51E6CA83100F692FD /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC7755F01E6CBB9300F692FD /* fonts */,
 				AC77559E1E6CA31600F692FD /* Assets.xcassets */,
 				AC77559B1E6CA31600F692FD /* Main.storyboard */,
 				AC7755A01E6CA31600F692FD /* LaunchScreen.storyboard */,
@@ -190,6 +195,7 @@
 				AC7755971E6CA31600F692FD /* AppDelegate.swift */,
 				AC7755991E6CA31600F692FD /* ViewController.swift */,
 				AC7755CE1E6CAE6500F692FD /* ARBridgeHeader.h */,
+				AC7755EE1E6CB9A400F692FD /* SettingController.swift */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -232,6 +238,14 @@
 				AC7755E71E6CB0D700F692FD /* PlaceAnnotation.swift */,
 			);
 			name = ar_classes;
+			sourceTree = "<group>";
+		};
+		AC7755F01E6CBB9300F692FD /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC7755F11E6CBBFB00F692FD /* WackySushi.ttf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 		CEA46A22869BDF95C142B588 /* Pods */ = {
@@ -377,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7755A21E6CA31600F692FD /* LaunchScreen.storyboard in Resources */,
+				AC7755F21E6CBBFB00F692FD /* WackySushi.ttf in Resources */,
 				AC77559F1E6CA31600F692FD /* Assets.xcassets in Resources */,
 				AC77559D1E6CA31600F692FD /* Main.storyboard in Resources */,
 			);
@@ -541,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7755EF1E6CB9A400F692FD /* SettingController.swift in Sources */,
 				AC7755EA1E6CB0D700F692FD /* MapViewController.swift in Sources */,
 				AC7755EC1E6CB0D700F692FD /* Place.swift in Sources */,
 				AC7755E01E6CB08A00F692FD /* GEOLocations.m in Sources */,
