@@ -1,7 +1,9 @@
 PODS:
+  - Alamofire (4.4.0)
   - JTMaterialTransition (2.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - JTMaterialTransition (from `https://github.com/jonathantribouharet/JTMaterialTransition.git`)
 
 EXTERNAL SOURCES:
@@ -14,8 +16,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/jonathantribouharet/JTMaterialTransition.git
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   JTMaterialTransition: 2350b44b404d1982a7ba755866cc65da452f4eec
 
-PODFILE CHECKSUM: afd68f8b7d626bb4c9f9f68d79f1f30e5a3fcb5a
+PODFILE CHECKSUM: e6a3d279a84add048d63d8a504b242c2f954b6c0
 
 COCOAPODS: 1.2.0

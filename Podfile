@@ -1,11 +1,15 @@
 platform :ios, '9.0'
 
+def shared_pods
+	pod 'Alamofire', '~>4.4'
+	pod 'JTMaterialTransition', :git => 'https://github.com/jonathantribouharet/JTMaterialTransition.git'
+end
+
 target 'geia' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for geia
-	pod 'JTMaterialTransition', :git => 'https://github.com/jonathantribouharet/JTMaterialTransition.git'
+	shared_pods
 
   target 'geiaTests' do
     inherit! :search_paths

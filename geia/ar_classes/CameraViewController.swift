@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import Alamofire
 
 class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, ARMarkerDelegate, MarkerViewDelegate {
     
@@ -24,6 +25,18 @@ class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, AR
             _arController!.debugMode = false
         }
         geoLocations()
+        
+        Alamofire.request("http://geia-api.herokuapp.com/geia/api/v1.0/ip").responseJSON { response in
+            print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.data)     // server data
+            print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+        }
+        
         
     }
     
